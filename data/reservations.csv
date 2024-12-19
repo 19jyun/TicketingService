@@ -1,0 +1,2 @@
+reservation_id,user,show_id,seat,status
+1,john_doe,123,A1,confirmed
