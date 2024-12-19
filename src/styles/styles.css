@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.header-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Forms */
+.form-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.form-title {
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-label {
+    font-size: 14px;
+}
+
+.form-input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-button {
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.form-error {
+    color: red;
+    font-size: 12px;
+}
+
+.form-success {
+    color: green;
+    font-size: 12px;
+}
+
+/* Main Page Styles */
+.main-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Banner Carousel */
+.banner-carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    margin-bottom: 40px;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Genre-Based Rankings */
+.genre-rankings {
+    margin-bottom: 40px;
+}
+
+.genre-rankings h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.ranking-category {
+    margin-bottom: 20px;
+}
+
+.ranking-category h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.ranking-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ranking-category li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.ranking-category .event-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.ranking-category .event-date,
+.ranking-category .event-venue {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Footer */
+.main-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.main-footer p {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    margin-right: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
