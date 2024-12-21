@@ -1,0 +1,73 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.genreButtons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.genreButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.genreButton:hover {
+    background-color: #d4d4d4;
+}
+
+.genreButton.active {
+    background-color: #333;
+    color: #fff;
+}
+
+.topShowsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.showCard {
+    width: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.showCard:hover {
+    transform: scale(1.05);
+    /* 카드 확대 효과 */
+}
+
+.poster {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* 애니메이션 클래스 */
+.fadeIn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fadeOut {
+    opacity: 0;
+    transform: translateY(10px);
+}

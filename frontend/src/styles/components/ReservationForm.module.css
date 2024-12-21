@@ -1,0 +1,56 @@
+.reservationContainer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.datePicker,
+.timePicker {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #eee;
+}
+
+.reservationButton {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reservationButton:hover {
+    background-color: #4500b3;
+}
+
+.castInfo {
+    font-size: 14px;
+    color: #666;
+}
