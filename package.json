@@ -4,7 +4,9 @@
   "description": "A ticketing service project with frontend and backend.",
   "scripts": {
     "install:all": "cd backend && npm install && cd ../frontend && npm install",
-    "start:all": "concurrently \"cd backend && npm start\" \"cd frontend && npm start\""
+    "build:backend": "cd backend && npm run build",
+    "start:all": "npm run build:backend && concurrently \"cd backend && npm start\" \"cd frontend && npm start\"",
+    "setup:all": "npm run install:all && npm run build:backend && npm run start:all"
   },
   "devDependencies": {
     "concurrently": "^8.0.1"

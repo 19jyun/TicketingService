@@ -19,18 +19,12 @@ A full-stack ticketing service project built with **Node.js**, **React**, and **
 
    ```
 
-2. **Install Dependencies**
+2. **Install Dependencies and Run Servers**
 
    ```bash
    npm install -g concurrently
-   npm run install:all
+   npm run setup:all
 
    ```
 
-3. **Start the project**
-
-   ```bash
-   npm run start:all
-   - Backend runs on http://localhost:5000
-   - Frontend runs on http://localhost:3000
-   ```
+   - The following script should automatically install all dependencies for both frontend and backend, compile, and run the servers
