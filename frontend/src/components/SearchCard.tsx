@@ -3,17 +3,19 @@ import { useNavigate } from "react-router-dom";
 import "../styles/components/SearchCard.css";
 
 interface SearchCardProps {
-  show_id: number; // show_id는 숫자형으로 변경
+  show_id: number;
   title: string;
   genre: string;
-  description: string;
+  release_date: string;
+  ranking: number;  // 랭킹 추가
 }
 
 const SearchCard: React.FC<SearchCardProps> = ({
   show_id,
   title,
   genre,
-  description,
+  release_date,
+  ranking,
 }) => {
   const navigate = useNavigate();
 
@@ -23,9 +25,11 @@ const SearchCard: React.FC<SearchCardProps> = ({
 
   return (
     <div className="search-card" onClick={handleCardClick}>
+      <img src={`http://localhost:5000/uploads/posters/${show_id}.jpg`} alt={title} />
       <h3 className="search-card-title">{title}</h3>
       <p className="search-card-genre">{genre}</p>
-      <p className="search-card-description">{description}</p>
+      <p className="search-card-release-date">{release_date}</p>
+       <p className="search-card-ranking">Rank: {ranking}</p>
     </div>
   );
 };

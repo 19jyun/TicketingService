@@ -83,7 +83,6 @@ const GenreRankings: React.FC = () => {
               className={styles.poster}
             />
             <h3>{show.title}</h3>
-            <p>{show.description}</p>
             <p>
               <strong>Release Date:</strong> {show.release_date}
             </p>

@@ -30,7 +30,8 @@ const SearchResult: React.FC = () => {
           show_id={show.show_id}
           title={show.title}
           genre={show.genre}
-          description={show.description}
+          release_date={show.release_date} // release_date 전달
+          ranking={show.ranking} // ranking 전달
         />
       ))}
     </div>
