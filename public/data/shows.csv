@@ -1,0 +1,41 @@
+show_id,title,poster_url,description,genre,release_date,ranking
+1,Chicago,/images/posters/1.jpg,This is the description for Chicago.,Concerts,2023-05-21,1
+2,Matilda,/images/posters/2.jpg,This is the description for Matilda.,Concerts,2023-02-22,5
+3,Family Fun Fair,/images/posters/3.jpg,This is the description for Family Fun Fair.,Concerts,2023-10-30,2
+4,Hamilton,/images/posters/4.jpg,This is the description for Hamilton.,Concerts,2023-02-17,6
+5,Matilda,/images/posters/5.jpg,This is the description for Matilda.,Concerts,2023-11-05,7
+6,Children's Theater,/images/posters/6.jpg,This is the description for Children's Theater.,Concerts,2023-11-29,3
+7,Family Fun Fair,/images/posters/7.jpg,This is the description for Family Fun Fair.,Concerts,2023-04-23,4
+8,Ballet Performance,/images/posters/8.jpg,This is the description for Ballet Performance.,Musical,2023-01-04,1
+9,Frozen,/images/posters/9.jpg,This is the description for Frozen.,Musical,2023-08-05,2
+10,Miss Saigon,/images/posters/10.jpg,This is the description for Miss Saigon.,Musical,2023-04-21,3
+11,Concert: BLACKPINK,/images/posters/11.jpg,This is the description for Concert: BLACKPINK.,Musical,2023-02-17,4
+12,Mamma Mia!,/images/posters/12.jpg,This is the description for Mamma Mia!.,Musical,2023-06-26,5
+13,West Side Story,/images/posters/13.jpg,This is the description for West Side Story.,Musical,2023-01-23,6
+14,Golf Tournament,/images/posters/14.jpg,This is the description for Golf Tournament.,Musical,2023-03-05,7
+15,Cats,/images/posters/15.jpg,This is the description for Cats.,Musical,2023-05-31,8
+16,Concert: EXO Planet,/images/posters/16.jpg,This is the description for Concert: EXO Planet.,Musical,2023-04-09,12
+17,The Lion King,/images/posters/17.jpg,This is the description for The Lion King.,Musical,2023-12-05,9
+18,Kinky Boots,/images/posters/18.jpg,This is the description for Kinky Boots.,Musical,2023-04-30,10
+19,Concert: TWICE Land,/images/posters/19.jpg,This is the description for Concert: TWICE Land.,Concerts,2023-08-21,8
+20,Concert: EXO Planet,/images/posters/20.jpg,This is the description for Concert: EXO Planet.,Concerts,2023-07-09,9
+21,Rent,/images/posters/21.jpg,This is the description for Rent.,Concerts,2023-05-17,11
+22,The Lion King,/images/posters/22.jpg,This is the description for The Lion King.,Concerts,2023-11-22,10
+23,Family Fun Fair,/images/posters/23.jpg,This is the description for Family Fun Fair.,Concerts,2023-05-06,12
+24,Golf Tournament,/images/posters/24.jpg,This is the description for Golf Tournament.,Concerts,2023-05-19,13
+25,Children's Theater,/images/posters/25.jpg,This is the description for Children's Theater.,Children/Family,2023-12-17,1
+26,Wicked,/images/posters/26.jpg,This is the description for Wicked.,Children/Family,2023-01-17,2
+27,Football Match,/images/posters/27.jpg,This is the description for Football Match.,Children/Family,2023-02-03,3
+28,Camping Adventure,/images/posters/28.jpg,This is the description for Camping Adventure.,Children/Family,2023-06-11,5
+29,Tech Expo 2025,/images/posters/29.jpg,This is the description for Tech Expo 2025.,Children/Family,2023-11-26,4
+30,Aladdin,/images/posters/30.jpg,This is the description for Aladdin.,Children/Family,2023-03-13,6
+31,Children's Theater,/images/posters/31.jpg,This is the description for Children's Theater.,Children/Family,2023-05-15,7
+32,Ballet Performance,/images/posters/32.jpg,This is the description for Ballet Performance.,Children/Family,2023-10-26,8
+33,Concert: EXO Planet,/images/posters/33.jpg,This is the description for Concert: EXO Planet.,Exhibition,2023-03-12,1
+34,Tech Expo 2025,/images/posters/34.jpg,This is the description for Tech Expo 2025.,Exhibition,2023-01-25,2
+35,Aladdin,/images/posters/35.jpg,This is the description for Aladdin.,Exhibition,2023-03-23,5
+36,Tennis Open,/images/posters/36.jpg,This is the description for Tennis Open.,Exhibition,2023-02-02,3
+37,Concert: TWICE Land,/images/posters/37.jpg,This is the description for Concert: TWICE Land.,Exhibition,2023-08-28,4
+38,West Side Story,/images/posters/38.jpg,This is the description for West Side Story.,Exhibition,2023-01-06,6
+39,Chicago,/images/posters/39.jpg,This is the description for Chicago.,Exhibition,2023-10-02,7
+40,Miss Saigon,/images/posters/40.jpg,This is the description for Miss Saigon.,Musical,2023-11-25,11

@@ -1,78 +1,49 @@
 import React, { useState } from 'react';
+import styles from '../styles/components/LoginForm.module.css';
 
 interface LoginFormProps {
-  onLogin: (id: string, password: string) => void;
+  onLogin: (email: string, password: string) => void;
+  onSignup: () => void;
   errorMessage?: string;
 }
 
-export const LoginForm: React.FC<LoginFormProps> = ({ onLogin, errorMessage }) => {
-  const [id, setId] = useState('');
+export const LoginForm: React.FC<LoginFormProps> = ({ onLogin, onSignup, errorMessage }) => {
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    onLogin(id, password); // 부모 컴포넌트로 로그인 이벤트 전달
+    onLogin(email, password);
   };
 
   return (
-    <div style={styles.container}>
-      <h2>Login</h2>
-      {errorMessage && <p style={styles.error}>{errorMessage}</p>}
-      <form onSubmit={handleSubmit} style={styles.form}>
-        <label style={styles.label}>
-          ID:
-          <input
-            type="text"
-            value={id}
-            onChange={(e) => setId(e.target.value)}
-            style={styles.input}
-            required
-          />
-        </label>
-        <label style={styles.label}>
-          Password:
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            style={styles.input}
-            required
-          />
-        </label>
-        <button type="submit" style={styles.button}>
+    <div className={styles.container}>
+      <h2 className={styles.title}>Login</h2>
+      {errorMessage && <p className={styles.error}>{errorMessage}</p>}
+      <form onSubmit={handleSubmit} className={styles.form}>
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Enter your Email"
+          className={styles.input}
+          required
+        />
+        <input
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          placeholder="Enter your Password"
+          className={styles.input}
+          required
+        />
+        <button type="submit" className={styles.loginButton}>
           Login
         </button>
       </form>
+      <button onClick={onSignup} className={styles.signupButton}>
+        Signup
+      </button>
     </div>
   );
-};
-
-const styles: { [key: string]: React.CSSProperties } = {
-  container: {
-    maxWidth: '400px',
-    margin: '0 auto',
-    padding: '20px',
-    textAlign: 'center',
-    fontFamily: 'Arial, sans-serif',
-  },
-  error: {
-    color: 'red',
-  },
-  form: {
-    display: 'flex',
-    flexDirection: 'column',
-  },
-  label: {
-    marginBottom: '10px',
-  },
-  input: {
-    padding: '10px',
-    fontSize: '16px',
-    marginBottom: '10px',
-  },
-  button: {
-    padding: '10px',
-    fontSize: '16px',
-    cursor: 'pointer',
-  },
 };
