@@ -85,7 +85,6 @@ export const loginUser = async (req: Request, res: Response) => {
   }
 };
 
-// 회원가입
 export const signupUser = async (req: Request, res: Response) => {
   const { username, email, password } = req.query;
 
@@ -128,8 +127,16 @@ export const signupUser = async (req: Request, res: Response) => {
         .json({ success: false, error: "Email is already taken" });
     }
 
+    // 관심도 초기화 값
+    const initialInterest = {
+      Concerts: 0.25,
+      Musical: 0.25,
+      "Children/Family": 0.25,
+      Exhibition: 0.25,
+    };
+
     // 새 사용자 추가
-    const newUser = { username, email, password };
+    const newUser = { username, email, password, interest: initialInterest };
     users.push(newUser);
 
     // 파일에 저장
@@ -139,6 +146,7 @@ export const signupUser = async (req: Request, res: Response) => {
       .status(201)
       .json({ success: true, message: "User registered successfully" });
   } catch (error) {
+    console.error("Error during signup:", error);
     res.status(500).json({ success: false, error: "Internal server error" });
   }
 };
@@ -224,6 +232,56 @@ export const verifyPassword = async (req: Request, res: Response) => {
     }
   } catch (error) {
     console.error("Error verifying password:", error);
+    res.status(500).json({ success: false, error: "Internal server error" });
+  }
+};
+
+export const updateUserInterest = async (req: Request, res: Response) => {
+  const { username, genre, action } = req.query;
+
+  if (!username || !genre || !action) {
+    return res.status(400).json({
+      success: false,
+      error: "Username, genre, and action are required.",
+    });
+  }
+
+  try {
+    const users = await getUsers();
+
+    // 유저 검색
+    const user = users.find((u) => u.username === username);
+    if (!user || !user.interest) {
+      return res.status(404).json({
+        success: false,
+        error: "User not found or interest not initialized.",
+      });
+    }
+
+    // 관심도 업데이트
+    const increment = action === "reservation" ? 20 : 1;
+    user.interest[genre as string] =
+      (user.interest[genre as string] || 0) + increment;
+
+    // 관심도 정규화
+    const total = Object.values(user.interest).reduce(
+      (sum, value) => sum + value,
+      0
+    );
+    for (const key in user.interest) {
+      user.interest[key] /= total;
+    }
+
+    // 저장
+    await saveUsers(users);
+
+    res.status(200).json({
+      success: true,
+      message: "Interest updated successfully",
+      interest: user.interest,
+    });
+  } catch (error) {
+    console.error("Error updating interest:", error);
     res.status(500).json({ success: false, error: "Internal server error" });
   }
 };

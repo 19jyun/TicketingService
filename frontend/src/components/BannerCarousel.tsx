@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { fetchBanners } from "../services/bannerService"; // Banner API 호출
+import { useAuth } from "../contexts/AuthContext"; // useAuth 훅을 가져옵니다.
 import styles from "../styles/components/BannerCarousel.module.css";
 
 const BannerCarousel: React.FC = () => {
@@ -9,12 +10,18 @@ const BannerCarousel: React.FC = () => {
   const [isTransitioning, setIsTransitioning] = useState(false); // 슬라이드 애니메이션 상태
   const intervalRef = useRef<NodeJS.Timeout | null>(null); // 슬라이드 자동 전환 타이머
   const navigate = useNavigate();
+  const user = useAuth(); // useAuth 훅을 호출하여 사용자 정보 가져오기
 
   // 배너 데이터 로드
   useEffect(() => {
     const loadBanners = async () => {
+      if (!user || !user.username) {
+        console.error("User is not authenticated");
+        return;
+      }
+
       try {
-        const response = await fetchBanners(); // Banner 데이터 API 호출
+        const response = await fetchBanners(user.username); // Banner 데이터 API 호출
         console.log("Fetched banners:", response.banners); // 로드된 데이터 확인
         setBannerImages(response.banners); // 배너 이미지 배열 설정
       } catch (error) {
@@ -26,7 +33,7 @@ const BannerCarousel: React.FC = () => {
     startTimer(); // 슬라이드 자동 전환 시작
 
     return () => stopTimer(); // 컴포넌트 언마운트 시 타이머 제거
-  }, []);
+  }, [user]);
 
   // 타이머 시작
   const startTimer = () => {

@@ -5,6 +5,7 @@ interface User {
   username: string;
   email: string;
   password: string;
+  interest: Record<string, number>;
 }
 
 const filePath = path.join(__dirname, "../../data/users.json");

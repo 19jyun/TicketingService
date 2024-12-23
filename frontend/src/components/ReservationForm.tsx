@@ -62,6 +62,7 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ showData }) => {
           user_id: username,
           show_title: showData.title,
           show_date: showData.release_date,
+          genre: showData.genre,
           reservedSeats: response.reservations,
           totalPrice,
         },

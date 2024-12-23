@@ -6,6 +6,7 @@ import {
   signupUser,
   changePassword,
   verifyPassword,
+  updateUserInterest,
 } from "../controllers/userController";
 
 const router = express.Router();
@@ -27,5 +28,7 @@ router.put("/change-password", changePassword);
 
 // 비밀번호 확인
 router.post("/verify-password", verifyPassword);
+
+router.post("/interest", updateUserInterest);
 
 export default router;
