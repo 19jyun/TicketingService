@@ -1,27 +1,131 @@
-import React, { useState } from 'react';
-import styles from '../styles/components/ReservationForm.module.css';
+import React, { useState, useEffect } from "react";
+import styles from "../styles/components/ReservationForm.module.css";
+import { addReservation } from "../services/reservationService";
+import { useAuth } from "../contexts/AuthContext";
+import { useNavigate } from "react-router-dom";
+import { Show } from "../types/Show";
 
-const ReservationForm: React.FC = () => {
-  const [selectedDate, setSelectedDate] = useState<string | null>(null);
-  const [selectedTime, setSelectedTime] = useState<string | null>(null);
+interface ReservationFormProps {
+  showData: Show;
+}
 
-  const handleReservation = () => {
-    if (selectedDate && selectedTime) {
-      alert(`Reservation Complete: ${selectedDate}, ${selectedTime}`);
-    } else {
-      alert('Please Select a date.');
+const ReservationForm: React.FC<ReservationFormProps> = ({ showData }) => {
+  const { username } = useAuth();
+  const navigate = useNavigate();
+
+  const [regularCount, setRegularCount] = useState(0);
+  const [vipCount, setVipCount] = useState(0);
+  const [totalPrice, setTotalPrice] = useState(0);
+
+  useEffect(() => {
+    const regularPrice = parseInt(showData.price.regular.split(" ")[0]);
+    const vipPrice = parseInt(showData.price.vip.split(" ")[0]);
+    setTotalPrice(regularCount * regularPrice + vipCount * vipPrice);
+  }, [regularCount, vipCount, showData]);
+
+  const handleReservation = async () => {
+    if (!username) {
+      alert("Login Required");
+      return;
+    }
+
+    // 예약할 좌석 정보 준비
+    const seat_types: string[] = [];
+    const seat_counts: number[] = [];
+
+    if (regularCount > 0) {
+      seat_types.push("regular");
+      seat_counts.push(regularCount);
+    }
+    if (vipCount > 0) {
+      seat_types.push("vip");
+      seat_counts.push(vipCount);
+    }
+
+    // 좌석이 하나도 선택되지 않은 경우 처리
+    if (seat_types.length === 0) {
+      alert("Please select at least one seat.");
+      return;
+    }
+
+    try {
+      const response = await addReservation(
+        username,
+        showData.show_id,
+        seat_types,
+        seat_counts
+      );
+
+      // 성공적으로 예약한 경우 ReservationResult로 이동
+      navigate("/reservation-result", {
+        state: {
+          user_id: username,
+          show_title: showData.title,
+          show_date: showData.release_date,
+          reservedSeats: response.reservations,
+          totalPrice,
+        },
+      });
+    } catch (error: any) {
+      console.error("Error in addReservation:", error);
+      alert(`Error occurred while reserving: ${error.response?.data?.message || error.message}`);
     }
   };
 
   return (
     <div className={styles.reservationContainer}>
-      <h2 className={styles.title}>Date</h2>
-      <div className={styles.datePicker}>
-        <button onClick={() => setSelectedDate('2025-01-09')}>2025-01-09</button>
-        <button onClick={() => setSelectedDate('2025-01-12')}>2025-01-12</button>
+      <h2 className={styles.title}>Reserve</h2>
+      <div className={styles.seatSelection}>
+        <div className={styles.seatType}>
+          <h3>Regular Seats ({showData.price.regular})</h3>
+          <div className={styles.seatControls}>
+            <button
+              onClick={() => setRegularCount((count) => Math.max(0, count - 1))}
+              disabled={regularCount <= 0}
+            >
+              -
+            </button>
+            <span>{regularCount}</span>
+            <button
+              onClick={() =>
+                setRegularCount((count) =>
+                  Math.min(showData.seats.regular, count + 1)
+                )
+              }
+              disabled={regularCount >= showData.seats.regular}
+            >
+              +
+            </button>
+          </div>
+        </div>
+        <div className={styles.seatType}>
+          <h3>VIP Seats ({showData.price.vip})</h3>
+          <div className={styles.seatControls}>
+            <button
+              onClick={() => setVipCount((count) => Math.max(0, count - 1))}
+              disabled={vipCount <= 0}
+            >
+              -
+            </button>
+            <span>{vipCount}</span>
+            <button
+              onClick={() =>
+                setVipCount((count) =>
+                  Math.min(showData.seats.vip, count + 1)
+                )
+              }
+              disabled={vipCount >= showData.seats.vip}
+            >
+              +
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className={styles.totalPrice}>
+        <h3>Total: {totalPrice} USD</h3>
       </div>
       <button className={styles.reservationButton} onClick={handleReservation}>
-        Make a Reservation
+        Reserve
       </button>
     </div>
   );

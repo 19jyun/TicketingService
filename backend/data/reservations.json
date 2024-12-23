@@ -1,9 +1,90 @@
 [
-    {
-        "reservation_id": 1,
-        "user_id": " admin",
-        "show_id": 1,
-        "seat": " A1",
-        "date": " 2023-05-21"
-    }
+  {
+    "reservation_id": 1,
+    "user_id": " admin",
+    "show_id": 1,
+    "seat": " A1",
+    "date": " 2023-05-21"
+  },
+  {
+    "reservation_id": "j4ql-7mnx-4s8c-0r79",
+    "user_id": "USER123",
+    "show_id": 1,
+    "date": "2024-12-22T07:01:26.358Z",
+    "seat_type": "vip",
+    "seat_count": 3,
+    "price": 300
+  },
+  {
+    "reservation_id": "upfl-wauq-y1q5-poa3",
+    "user_id": "test_user",
+    "show_id": 1,
+    "date": "2024-12-22T08:34:00.646Z",
+    "seat_type": "regular",
+    "seat_count": 2,
+    "price": 100
+  },
+  {
+    "reservation_id": "jk2b-nkxv-fy5r-73zy",
+    "user_id": "test_user",
+    "show_id": 1,
+    "date": "2024-12-22T08:34:00.646Z",
+    "seat_type": "vip",
+    "seat_count": 1,
+    "price": 100
+  },
+  {
+    "reservation_id": "6ady-dx0u-4043-atk0",
+    "user_id": "test_user",
+    "show_id": 1,
+    "date": "2024-12-22T09:20:08.068Z",
+    "seat_type": "regular",
+    "seat_count": 2,
+    "price": 100
+  },
+  {
+    "reservation_id": "uhs5-w86v-4r1c-5fn3",
+    "user_id": "test_user",
+    "show_id": 1,
+    "date": "2024-12-22T09:20:08.068Z",
+    "seat_type": "vip",
+    "seat_count": 1,
+    "price": 100
+  },
+  {
+    "reservation_id": "05ra-5f1a-tb5k-osrl",
+    "user_id": "admin1",
+    "show_id": 6,
+    "date": "2024-12-22T11:14:12.550Z",
+    "seat_type": "regular",
+    "seat_count": 1,
+    "price": 20
+  },
+  {
+    "reservation_id": "h692-jbxe-tr8g-q9nu",
+    "user_id": "admin1",
+    "show_id": 6,
+    "date": "2024-12-22T11:14:15.703Z",
+    "seat_type": "vip",
+    "seat_count": 1,
+    "price": 40
+  },
+  {
+    "reservation_id": "irkg-kvan-nsop-w34l",
+    "user_id": "admin1",
+    "show_id": 6,
+    "date": "2024-12-22T11:14:21.022Z",
+    "seat_type": "regular",
+    "seat_count": 2,
+    "price": 40
+  },
+  {
+    "reservation_id": "6yai-11t3-m5pr-60gt",
+    "user_id": "admin1",
+    "show_id": 6,
+    "date": "2024-12-22T11:14:21.022Z",
+    "seat_type": "vip",
+    "seat_count": 1,
+    "price": 40
+  }
 ]

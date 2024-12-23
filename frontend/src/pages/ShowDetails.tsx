@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getShowById } from "../services/showService"; // showService의 API 함수 사용
+import { getShowById } from "../services/showService"; // showService의 API 함수
 import ShowDetailForm from "../components/ShowDetailForm";
 import ReservationForm from "../components/ReservationForm";
 import styles from "../styles/pages/ShowDetails.module.css";
 import { Show } from "../types/Show";
 
-export const ShowDetails: React.FC = () => {
+const ShowDetails: React.FC = () => {
   const { show_id } = useParams<{ show_id: string }>(); // URL의 show_id 추출
   const [showData, setShowData] = useState<Show | null>(null); // 쇼 데이터 상태
   const [error, setError] = useState<string | null>(null); // 에러 상태
@@ -15,7 +15,7 @@ export const ShowDetails: React.FC = () => {
     const fetchDetails = async () => {
       try {
         if (show_id) {
-          const show = await getShowById(show_id); // API 호출
+          const show = await getShowById(parseInt(show_id)); // API 호출
           if (show) {
             setShowData(show); // 성공 시 쇼 데이터 상태 업데이트
           } else {
@@ -40,11 +40,14 @@ export const ShowDetails: React.FC = () => {
 
   return (
     <div className={styles.container}>
+      {/* 쇼 상세 정보 */}
       <div className={styles.detailsSection}>
-        <ShowDetailForm showData={showData} /> {/* 쇼 상세 정보 렌더링 */}
+        <ShowDetailForm showData={showData} /> {/* 쇼 상세 정보 컴포넌트 */}
       </div>
+
+      {/* 예약 폼 */}
       <div className={styles.reservationSection}>
-        <ReservationForm /> {/* 예약 폼 렌더링 */}
+        <ReservationForm showData={showData} /> {/* 예약 폼 컴포넌트 */}
       </div>
     </div>
   );

@@ -1,0 +1,64 @@
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.reservationDetails {
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.reservationDetails p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.errorContainer {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffecec;
+    border-radius: 8px;
+    border: 1px solid #ff6a6a;
+}
+
+.errorContainer h1 {
+    color: #ff6a6a;
+    margin-bottom: 20px;
+}
+
+.errorContainer p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}

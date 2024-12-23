@@ -1,682 +1,682 @@
 [
-    {
-        "show_id": 1,
-        "title": "Chicago",
-        "poster_url": "/uploads/posters/1.jpg",
-        "description": "Chicago is a dazzling spectacle of music and dance, set against the backdrop of 1920s Chicago. The musical tells the story of two women, Velma and Roxie, who are accused of murder and fight for their freedom while navigating the glitz and glamour of the media frenzy. This high-energy performance is filled with iconic jazz numbers and sharp choreography that will leave you captivated. The tension between the characters is palpable, and the audience will be at the edge of their seats throughout the show. Chicago has become a timeless piece of Broadway history, and this production brings it to life in a way that feels fresh and relevant.",
-        "genre": "Concerts",
-        "release_date": "2023-05-21",
-        "ranking": 1,
-        "price": {
-            "regular": "50 USD",
-            "vip": "100 USD"
-        },
-        "seats": {
-            "regular": 350,
-            "vip": 150
-        }
+  {
+    "show_id": 1,
+    "title": "Chicago",
+    "poster_url": "/uploads/posters/1.jpg",
+    "description": "Chicago is a dazzling spectacle of music and dance, set against the backdrop of 1920s Chicago. The musical tells the story of two women, Velma and Roxie, who are accused of murder and fight for their freedom while navigating the glitz and glamour of the media frenzy. This high-energy performance is filled with iconic jazz numbers and sharp choreography that will leave you captivated. The tension between the characters is palpable, and the audience will be at the edge of their seats throughout the show. Chicago has become a timeless piece of Broadway history, and this production brings it to life in a way that feels fresh and relevant.",
+    "genre": "Concerts",
+    "release_date": "2023-05-21",
+    "ranking": 1,
+    "price": {
+      "regular": "50 USD",
+      "vip": "100 USD"
     },
-    {
-        "show_id": 2,
-        "title": "Matilda",
-        "poster_url": "/uploads/posters/2.jpg",
-        "description": "Matilda the Musical tells the inspiring story of a young girl with extraordinary powers who stands up against the oppression of her abusive school headmistress, Miss Trunchbull. With catchy songs and a heartwarming message about the power of courage, Matilda takes the audience on a thrilling ride of self-discovery and justice. The show features moments of incredible humor, along with powerful emotional scenes that bring Matilda’s journey to life. The dazzling choreography and vibrant set design create a truly magical atmosphere. The music will stay with you long after the final curtain call.",
-        "genre": "Concerts",
-        "release_date": "2023-02-22",
-        "ranking": 5,
-        "price": {
-            "regular": "45 USD",
-            "vip": "80 USD"
-        },
-        "seats": {
-            "regular": 400,
-            "vip": 100
-        }
-    },
-    {
-        "show_id": 3,
-        "title": "Family Fun Fair",
-        "poster_url": "/uploads/posters/3.jpg",
-        "description": "The Family Fun Fair is a vibrant, family-friendly event featuring a variety of games, performances, and exciting attractions for all ages. From carnival rides to live entertainment, it's the perfect way to spend an afternoon with the whole family. Enjoy delicious food, fun games, and performances that will make you smile from ear to ear! This event is filled with color, music, and excitement that will entertain both the young and the young-at-heart. Don't miss out on the chance to experience the magic of the fair, where memories are made and laughter fills the air.",
-        "genre": "Concerts",
-        "release_date": "2023-10-30",
-        "ranking": 2,
-        "price": {
-            "regular": "30 USD",
-            "vip": "60 USD"
-        },
-        "seats": {
-            "regular": 800,
-            "vip": 200
-        }
-    },
-    {
-        "show_id": 4,
-        "title": "Hamilton",
-        "poster_url": "/uploads/posters/4.jpg",
-        "description": "Hamilton is a revolutionary musical that brings to life the founding father Alexander Hamilton through an innovative blend of hip-hop, R&B, and traditional musical theater. The show’s fast-paced and captivating storytelling has earned it multiple awards and an everlasting place in the hearts of audiences worldwide. With its iconic songs and complex characters, Hamilton challenges perceptions of history and heroism. The stunning choreography and dynamic cast add depth to every performance. Prepare to be inspired and moved by the tale of ambition, love, and revolution.",
-        "genre": "Concerts",
-        "release_date": "2023-02-17",
-        "ranking": 6,
-        "price": {
-            "regular": "120 USD",
-            "vip": "200 USD"
-        },
-        "seats": {
-            "regular": 600,
-            "vip": 200
-        }
-    },
-    {
-        "show_id": 5,
-        "title": "Matilda",
-        "poster_url": "/uploads/posters/5.jpg",
-        "description": "Matilda the Musical tells the inspiring story of a young girl with extraordinary powers who stands up against the oppression of her abusive school headmistress, Miss Trunchbull. With catchy songs and a heartwarming message about the power of courage, Matilda takes the audience on a thrilling ride of self-discovery and justice. The show features moments of incredible humor, along with powerful emotional scenes that bring Matilda’s journey to life. The dazzling choreography and vibrant set design create a truly magical atmosphere. The music will stay with you long after the final curtain call.",
-        "genre": "Concerts",
-        "release_date": "2023-11-05",
-        "ranking": 7,
-        "price": {
-            "regular": "45 USD",
-            "vip": "75 USD"
-        },
-        "seats": {
-            "regular": 400,
-            "vip": 100
-        }
-    },
-    {
-        "show_id": 6,
-        "title": "Children's Theater",
-        "poster_url": "/uploads/posters/6.jpg",
-        "description": "Children's Theater is an enchanting experience designed to captivate the imagination of young audiences. Through colorful costumes, lively songs, and interactive performances, it brings stories to life in ways that are both fun and educational. The show features a variety of characters and whimsical plots that will spark creativity in children. It’s a fantastic way to introduce kids to the magic of theater and storytelling, offering them an immersive experience they'll cherish forever. The cast includes energetic performers who keep the children engaged and entertained throughout the show.",
-        "genre": "Concerts",
-        "release_date": "2023-11-29",
-        "ranking": 3,
-        "price": {
-            "regular": "20 USD",
-            "vip": "40 USD"
-        },
-        "seats": {
-            "regular": 500,
-            "vip": 100
-        }
-    },
-    {
-        "show_id": 7,
-        "title": "Family Fun Fair",
-        "poster_url": "/uploads/posters/7.jpg",
-        "description": "The Family Fun Fair is a vibrant, family-friendly event featuring a variety of games, performances, and exciting attractions for all ages. From carnival rides to live entertainment, it's the perfect way to spend an afternoon with the whole family. Enjoy delicious food, fun games, and performances that will make you smile from ear to ear! This event is filled with color, music, and excitement that will entertain both the young and the young-at-heart. Don't miss out on the chance to experience the magic of the fair, where memories are made and laughter fills the air.",
-        "genre": "Concerts",
-        "release_date": "2023-04-23",
-        "ranking": 4,
-        "price": {
-            "regular": "30 USD",
-            "vip": "50 USD"
-        },
-        "seats": {
-            "regular": 600,
-            "vip": 400
-        }
-    },
-    {
-        "show_id": 8,
-        "title": "Ballet Performance",
-        "poster_url": "/uploads/posters/8.jpg",
-        "description": "Ballet Performance showcases the elegance and grace of classical ballet. Dancers tell timeless stories through stunning choreography and captivating music. From delicate pirouettes to powerful leaps, the ballet company brings to life the beauty and discipline of this art form in every performance. The show features a collection of beloved classical pieces that highlight the emotional power of movement. The audience is transported to a world of beauty and precision, where every gesture tells a story.",
-        "genre": "Musical",
-        "release_date": "2023-01-04",
-        "ranking": 1,
-        "price": {
-            "regular": "80 USD",
-            "vip": "150 USD"
-        },
-        "seats": {
-            "regular": 200,
-            "vip": 100
-        }
-    },
-    {
-        "show_id": 9,
-        "title": "Frozen",
-        "poster_url": "/uploads/posters/9.jpg",
-        "description": "Frozen the Musical brings to life the beloved characters of Elsa, Anna, and Olaf in a stunning stage adaptation of the hit animated movie. Featuring the iconic songs 'Let It Go' and 'Do You Want to Build a Snowman?', this magical production is sure to warm your heart and leave you breathless with its spectacular effects and heartfelt performances. The show captures the magic of the movie while adding a live theater experience that takes it to new heights. Elsa’s powers and Anna’s love are brought to life with breathtaking visuals and special effects that will leave you awestruck.",
-        "genre": "Musical",
-        "release_date": "2023-08-05",
-        "ranking": 2,
-        "price": {
-            "regular": "90 USD",
-            "vip": "150 USD"
-        },
-        "seats": {
-            "regular": 400,
-            "vip": 100
-        }
-    },
-    {
-        "show_id": 10,
-        "title": "Miss Saigon",
-        "poster_url": "/uploads/posters/10.jpg",
-        "description": "Miss Saigon is a musical set during the Vietnam War, telling the story of a young Vietnamese woman named Kim, who falls in love with an American soldier, Chris. The production explores themes of love, loss, and the impact of war on individuals. With its powerful songs and emotional narrative, the show has become a staple in musical theater. The musical’s striking visual effects and memorable music make it one of the most powerful performances in history. Miss Saigon continues to resonate with audiences worldwide through its timeless themes of love and sacrifice.",
-        "genre": "Musical",
-        "release_date": "2023-04-21",
-        "ranking": 3,
-        "price": {
-            "regular": "75 USD",
-            "vip": "130 USD"
-        },
-        "seats": {
-            "regular": 500,
-            "vip": 150
-        }
-    },
-    {
-        "show_id": 11,
-        "title": "Concert: BLACKPINK",
-        "poster_url": "/uploads/posters/11.jpg",
-        "description": "BLACKPINK is one of the most popular K-pop groups globally, and this concert offers a high-energy performance of their greatest hits. With incredible stage visuals and choreography, the concert showcases their unmatched talent and presence. From 'DDU-DU DDU-DU' to 'How You Like That', BLACKPINK’s concert is an electrifying experience for fans. The concert atmosphere is packed with excitement, as their powerful vocals and intense performances take center stage. BLACKPINK delivers a show like no other, making it a must-see for K-pop fans worldwide.",
-        "genre": "Musical",
-        "release_date": "2023-02-17",
-        "ranking": 4,
-        "price": {
-            "regular": "100 USD",
-            "vip": "180 USD"
-        },
-        "seats": {
-            "regular": 600,
-            "vip": 200
-        }
-    },
-    {
-        "show_id": 12,
-        "title": "Mamma Mia!",
-        "poster_url": "/uploads/posters/12.jpg",
-        "description": "Mamma Mia! is a feel-good musical that celebrates the timeless hits of ABBA. The story follows Sophie as she tries to discover who her father is just days before her wedding. Featuring iconic songs like 'Dancing Queen', 'Take a Chance on Me', and 'The Winner Takes It All', this show brings joy to audiences around the world. The musical combines humor, romance, and catchy tunes, making it a great choice for fans of ABBA and musical theater. Mamma Mia! continues to enchant audiences with its vibrant atmosphere and infectious songs.",
-        "genre": "Musical",
-        "release_date": "2023-06-26",
-        "ranking": 5,
-        "price": {
-            "regular": "70 USD",
-            "vip": "120 USD"
-        },
-        "seats": {
-            "regular": 450,
-            "vip": 150
-        }
-    },
-    {
-        "show_id": 13,
-        "title": "West Side Story",
-        "poster_url": "/uploads/posters/13.jpg",
-        "description": "West Side Story is a classic musical that takes place in New York City and centers on the forbidden love between Tony and Maria, two young people from opposing street gangs. The show explores themes of love, prejudice, and social divisions. With its unforgettable music by Leonard Bernstein and lyrics by Stephen Sondheim, the production includes iconic songs like 'Tonight' and 'America'. West Side Story continues to be one of the most influential musicals, offering a powerful commentary on race and class in America. Its gripping story and beautiful choreography have earned it a place in musical theater history.",
-        "genre": "Musical",
-        "release_date": "2023-01-23",
-        "ranking": 6,
-        "price": {
-            "regular": "65 USD",
-            "vip": "110 USD"
-        },
-        "seats": {
-            "regular": 500,
-            "vip": 200
-        }
-    },
-    {
-        "show_id": 14,
-        "title": "Golf Tournament",
-        "poster_url": "/uploads/posters/14.jpg",
-        "description": "The Golf Tournament is an exciting event that brings together top players from around the world. The competition is intense as the best golfers vie for the championship title. With stunning views of the course and thrilling moments of skill and precision, the tournament promises to be a memorable experience for fans of the sport. Attendees will witness world-class performances and the dedication of the athletes. Whether you're a seasoned golfer or a fan, this tournament offers an unforgettable day of action and sportsmanship.",
-        "genre": "Musical",
-        "release_date": "2023-03-05",
-        "ranking": 7,
-        "price": {
-            "regular": "50 USD",
-            "vip": "90 USD"
-        },
-        "seats": {
-            "regular": 600,
-            "vip": 100
-        }
-    },
-    {
-        "show_id": 15,
-        "title": "Cats",
-        "poster_url": "/uploads/posters/15.jpg",
-        "description": "Cats is a beloved musical that takes place in a junkyard, where the Jellicle Cats gather for their annual ball. The show features a series of musical numbers that introduce each of the quirky and fascinating feline characters. With its unforgettable music, including the iconic 'Memory', Cats has become one of the most well-known musicals in the world. The show’s unique blend of dance, song, and spectacle captivates audiences, and its themes of identity and belonging resonate deeply with viewers. Cats continues to be a worldwide favorite with its enchanting and mysterious atmosphere.",
-        "genre": "Musical",
-        "release_date": "2023-05-31",
-        "ranking": 8,
-        "price": {
-            "regular": "60 USD",
-            "vip": "110 USD"
-        },
-        "seats": {
-            "regular": 500,
-            "vip": 150
-        }
-    },
-    {
-        "show_id": 16,
-        "title": "Concert: EXO Planet",
-        "poster_url": "/uploads/posters/16.jpg",
-        "description": "EXO Planet is an electrifying concert showcasing EXO's biggest hits. As one of the leading K-pop groups, EXO’s performance is packed with high-energy dance moves, stunning visuals, and powerful vocals. The concert features a dynamic setlist of songs that have earned them international fame, including 'Growl', 'Love Me Right', and 'Call Me Baby'. Fans will be treated to an unforgettable live performance filled with the energy and excitement EXO is known for. This concert brings the magic of K-pop to the stage in an unforgettable experience.",
-        "genre": "Musical",
-        "release_date": "2023-04-09",
-        "ranking": 12,
-        "price": {
-            "regular": "90 USD",
-            "vip": "150 USD"
-        },
-        "seats": {
-            "regular": 700,
-            "vip": 300
-        }
-    },
-    {
-        "show_id": 17,
-        "title": "The Lion King",
-        "poster_url": "/uploads/posters/17.jpg",
-        "description": "The Lion King is a visually stunning musical that brings the beloved Disney movie to life. Set in the African savannah, the show follows Simba, a young lion who must reclaim his place as king after the tragic death of his father. The show features an extraordinary mix of puppetry, vibrant costumes, and unforgettable songs, including 'Circle of Life' and 'Hakuna Matata'. The powerful performances, along with the magical stage effects, transport the audience into a world of wonder and emotion. Whether you're experiencing it for the first time or returning to relive the magic, The Lion King is an unforgettable theater experience.",
-        "genre": "Musical",
-        "release_date": "2023-12-05",
-        "ranking": 9,
-        "price": {
-            "regular": "80 USD",
-            "vip": "140 USD"
-        },
-        "seats": {
-            "regular": 600,
-            "vip": 250
-        }
-    },
-    {
-        "show_id": 18,
-        "title": "Kinky Boots",
-        "poster_url": "/uploads/posters/18.jpg",
-        "description": "Kinky Boots tells the story of Charlie Price, a man who inherits his father’s failing shoe factory and teams up with drag queen Lola to create a line of high-heeled boots for men. The musical is filled with vibrant, energetic performances and a heartwarming message about accepting others for who they are. With dazzling costumes and catchy songs, Kinky Boots has earned its place as a Broadway favorite. The show combines humor, emotion, and bold performances to bring an unforgettable experience to the stage. The powerful themes of identity and self-expression resonate with audiences around the world.",
-        "genre": "Musical",
-        "release_date": "2023-04-30",
-        "ranking": 10,
-        "price": {
-            "regular": "75 USD",
-            "vip": "130 USD"
-        },
-        "seats": {
-            "regular": 500,
-            "vip": 150
-        }
-    },
-    {
-        "show_id": 19,
-        "title": "Concert: TWICE Land",
-        "poster_url": "/uploads/posters/19.jpg",
-        "description": "TWICE Land is a concert by the world-renowned K-pop group TWICE, offering a vibrant and high-energy performance. Fans will be treated to the group's greatest hits, including 'Fancy', 'Likey', and 'Feel Special'. The concert is a celebration of TWICE's journey, showcasing their remarkable talent and captivating stage presence. The atmosphere is filled with excitement as the group delivers electrifying performances and unforgettable moments. With stunning visuals, synchronized choreography, and a strong connection with their fans, TWICE Land promises an unforgettable experience.",
-        "genre": "Concerts",
-        "release_date": "2023-08-21",
-        "ranking": 8,
-        "price": {
-            "regular": "95 USD",
-            "vip": "160 USD"
-        },
-        "seats": {
-            "regular": 700,
-            "vip": 200
-        }
-    },
-    {
-        "show_id": 20,
-        "title": "Concert: EXO Planet",
-        "poster_url": "/uploads/posters/20.jpg",
-        "description": "EXO Planet is a spectacular concert event by EXO, one of the biggest names in K-pop. The concert features the group's most popular songs, including 'Growl', 'Love Me Right', and 'Call Me Baby'. Fans will be amazed by EXO's energetic performances and the stunning visuals that accompany the show. EXO Planet brings together a perfect blend of powerful vocals, intricate choreography, and electrifying energy. With a setlist full of their greatest hits, the concert offers a mesmerizing experience for K-pop fans worldwide.",
-        "genre": "Concerts",
-        "release_date": "2023-07-09",
-        "ranking": 9,
-        "price": {
-            "regular": "100 USD",
-            "vip": "170 USD"
-        },
-        "seats": {
-            "regular": 750,
-            "vip": 250
-        }
-    },
-    {
-        "show_id": 21,
-        "title": "Rent",
-        "poster_url": "/uploads/posters/21.jpg",
-        "description": "Rent is a groundbreaking rock musical about a group of artists and friends struggling to survive and create in New York City’s East Village. The musical addresses themes of love, loss, and community, while exploring the lives of individuals facing societal challenges. Songs like 'Seasons of Love' and 'La Vie Boheme' have become anthems for audiences around the world. With its heartfelt narrative and powerful performances, Rent has become a cultural phenomenon. It continues to resonate with audiences by showcasing the enduring strength of love and friendship in the face of adversity.",
-        "genre": "Concerts",
-        "release_date": "2023-05-17",
-        "ranking": 11,
-        "price": {
-            "regular": "80 USD",
-            "vip": "140 USD"
-        },
-        "seats": {
-            "regular": 550,
-            "vip": 150
-        }
-    },
-    {
-        "show_id": 22,
-        "title": "The Lion King",
-        "poster_url": "/uploads/posters/22.jpg",
-        "description": "The Lion King is a spectacular musical that tells the story of Simba, a young lion prince, and his journey to becoming king. Set against the backdrop of the African savannah, the show features unforgettable music by Elton John and Tim Rice, including songs like 'Circle of Life' and 'Hakuna Matata'. The musical is known for its breathtaking puppetry and stunning visual effects that bring the animal kingdom to life on stage. The emotional narrative, combined with the beautiful performances, makes it an unforgettable experience for all ages. The Lion King continues to captivate audiences with its universal themes of love, loss, and the circle of life.",
-        "genre": "Concerts",
-        "release_date": "2023-11-22",
-        "ranking": 10,
-        "price": {
-            "regular": "85 USD",
-            "vip": "150 USD"
-        },
-        "seats": {
-            "regular": 650,
-            "vip": 250
-        }
-    },
-    {
-        "show_id": 23,
-        "title": "Family Fun Fair",
-        "poster_url": "/uploads/posters/23.jpg",
-        "description": "The Family Fun Fair is an exciting event for families of all ages. With a wide range of activities, including games, rides, and entertainment, there’s something for everyone. Visitors can enjoy delicious food, participate in fun contests, and create lasting memories with their loved ones. The fair offers a variety of attractions such as a petting zoo, carnival games, and live performances. Whether you're seeking adventure or relaxation, the Family Fun Fair is the perfect destination for a day of enjoyment and family bonding.",
-        "genre": "Concerts",
-        "release_date": "2023-05-06",
-        "ranking": 12,
-        "price": {
-            "regular": "25 USD",
-            "vip": "50 USD"
-        },
-        "seats": {
-            "regular": 800,
-            "vip": 100
-        }
-    },
-    {
-        "show_id": 24,
-        "title": "Golf Tournament",
-        "poster_url": "/uploads/posters/24.jpg",
-        "description": "The Golf Tournament is an exciting competition that brings together the best golfers from around the world. The tournament offers a challenging course with breathtaking views and a fierce competition to determine the winner. Fans can watch their favorite players compete in this prestigious event, where precision, skill, and strategy are key. The tournament is a must-attend event for golf enthusiasts, offering a chance to witness world-class performances on the green. With its competitive atmosphere and stunning course, the Golf Tournament is a highlight for sports fans.",
-        "genre": "Concerts",
-        "release_date": "2023-05-19",
-        "ranking": 13,
-        "price": {
-            "regular": "50 USD",
-            "vip": "90 USD"
-        },
-        "seats": {
-            "regular": 700,
-            "vip": 150
-        }
-    },
-    {
-        "show_id": 25,
-        "title": "Children's Theater",
-        "poster_url": "/uploads/posters/25.jpg",
-        "description": "Children's Theater offers a delightful and engaging experience for young audiences. The performance features a mix of storytelling, music, and dance that captivates children and families alike. Through colorful costumes and interactive performances, children can immerse themselves in magical worlds and imaginative adventures. The show teaches valuable lessons about kindness, friendship, and creativity. With fun and educational themes, Children's Theater is the perfect way to introduce kids to the joys of live theater.",
-        "genre": "Children/Family",
-        "release_date": "2023-12-17",
-        "ranking": 1,
-        "price": {
-            "regular": "40 USD",
-            "vip": "75 USD"
-        },
-        "seats": {
-            "regular": 500,
-            "vip": 100
-        }
-    },
-    {
-        "show_id": 26,
-        "title": "Wicked",
-        "poster_url": "/uploads/posters/26.jpg",
-        "description": "Wicked is a fantastical musical that tells the untold story of the witches of Oz. The show follows Elphaba, the misunderstood green witch, and Glinda, the popular but naïve witch, as they form an unlikely friendship. As the musical explores themes of friendship, identity, and the nature of good versus evil, it captivates audiences with its beautiful score and stunning visuals. Songs like 'Defying Gravity' and 'For Good' have become iconic and resonant with audiences worldwide. Wicked is a powerful story that will leave audiences thinking long after the curtain falls.",
-        "genre": "Children/Family",
-        "release_date": "2023-01-17",
-        "ranking": 2,
-        "price": {
-            "regular": "75 USD",
-            "vip": "120 USD"
-        },
-        "seats": {
-            "regular": 600,
-            "vip": 200
-        }
-    },
-    {
-        "show_id": 27,
-        "title": "Football Match",
-        "poster_url": "/uploads/posters/27.jpg",
-        "description": "The Football Match is a thrilling sporting event that brings together top teams from around the world. The match offers an intense atmosphere, with fans cheering for their favorite teams as they compete for the championship. With skilled players, fast-paced action, and unforgettable moments, this match promises excitement from start to finish. Whether you're a die-hard fan or a casual spectator, the Football Match is an event not to be missed. The energy and passion of the crowd, combined with the intensity of the game, make this a unique experience.",
-        "genre": "Children/Family",
-        "release_date": "2023-02-03",
-        "ranking": 3,
-        "price": {
-            "regular": "45 USD",
-            "vip": "85 USD"
-        },
-        "seats": {
-            "regular": 800,
-            "vip": 150
-        }
-    },
-    {
-        "show_id": 28,
-        "title": "Camping Adventure",
-        "poster_url": "/uploads/posters/28.jpg",
-        "description": "Camping Adventure is a thrilling outdoor event that invites families and adventure seekers to explore nature. The event includes hiking, bonfires, and team-building exercises that strengthen relationships while connecting with the great outdoors. Participants can enjoy a variety of outdoor activities, such as fishing, wildlife watching, and stargazing. The experience is designed to create lasting memories while promoting environmental awareness. Camping Adventure is the perfect opportunity to escape the hustle and bustle of daily life and immerse yourself in the tranquility of nature.",
-        "genre": "Children/Family",
-        "release_date": "2023-06-11",
-        "ranking": 5,
-        "price": {
-            "regular": "30 USD",
-            "vip": "60 USD"
-        },
-        "seats": {
-            "regular": 600,
-            "vip": 120
-        }
-    },
-    {
-        "show_id": 29,
-        "title": "Tech Expo 2025",
-        "poster_url": "/uploads/posters/29.jpg",
-        "description": "Tech Expo 2025 is a groundbreaking event that showcases the latest advancements in technology. Attendees can experience cutting-edge innovations in fields like AI, robotics, and sustainable energy. The expo features a wide range of interactive exhibits, including live demonstrations and keynote speakers from top tech companies. It's the perfect opportunity for tech enthusiasts to explore the future of technology and interact with experts in the field. With its emphasis on innovation and exploration, Tech Expo 2025 is an event that promises to inspire and educate.",
-        "genre": "Children/Family",
-        "release_date": "2023-11-26",
-        "ranking": 4,
-        "price": {
-            "regular": "50 USD",
-            "vip": "90 USD"
-        },
-        "seats": {
-            "regular": 700,
-            "vip": 150
-        }
-    },
-    {
-        "show_id": 30,
-        "title": "Aladdin",
-        "poster_url": "/uploads/posters/30.jpg",
-        "description": "Aladdin is a magical tale of adventure, love, and self-discovery. The show follows Aladdin, a young man who discovers a magical lamp and is granted three wishes by a genie. As Aladdin navigates through his newfound wealth and power, he learns valuable lessons about courage, honesty, and the true meaning of friendship. With stunning visuals, memorable music, and a captivating storyline, Aladdin transports audiences to the enchanting world of Agrabah. The musical's timeless themes resonate with all ages, making it a truly unforgettable experience for the whole family.",
-        "genre": "Children/Family",
-        "release_date": "2023-03-13",
-        "ranking": 6,
-        "price": {
-            "regular": "60 USD",
-            "vip": "110 USD"
-        },
-        "seats": {
-            "regular": 650,
-            "vip": 200
-        }
-    },
-    {
-        "show_id": 31,
-        "title": "Children's Theater",
-        "poster_url": "/uploads/posters/31.jpg",
-        "description": "Children's Theater is a delightful and interactive performance designed to entertain young audiences. The show features a mix of storytelling, music, and dance, all tailored to engage children and spark their imaginations. Each performance offers a fun, educational experience that teaches valuable lessons about friendship, teamwork, and creativity. With colorful costumes and lively performances, the theater is a magical world where children can immerse themselves in a story. It's a wonderful opportunity for families to enjoy an afternoon together, making lasting memories.",
-        "genre": "Children/Family",
-        "release_date": "2023-05-15",
-        "ranking": 7,
-        "price": {
-            "regular": "30 USD",
-            "vip": "55 USD"
-        },
-        "seats": {
-            "regular": 500,
-            "vip": 100
-        }
-    },
-    {
-        "show_id": 32,
-        "title": "Ballet Performance",
-        "poster_url": "/uploads/posters/32.jpg",
-        "description": "Ballet Performance is an exquisite display of grace and elegance, featuring world-class ballet dancers performing classical and contemporary pieces. The show combines stunning choreography, beautiful costumes, and live music to create an unforgettable experience. Whether you're a longtime ballet enthusiast or new to the art form, this performance will captivate you with its precision and artistry. The program includes both iconic ballet routines and fresh, innovative compositions that highlight the depth of ballet's expressive power. It's an evening of culture and sophistication, perfect for those seeking a refined night out.",
-        "genre": "Children/Family",
-        "release_date": "2023-10-26",
-        "ranking": 8,
-        "price": {
-            "regular": "50 USD",
-            "vip": "90 USD"
-        },
-        "seats": {
-            "regular": 450,
-            "vip": 150
-        }
-    },
-    {
-        "show_id": 33,
-        "title": "Concert: EXO Planet",
-        "poster_url": "/uploads/posters/33.jpg",
-        "description": "Concert: EXO Planet is an electrifying musical event showcasing the global phenomenon EXO. The concert will feature EXO's biggest hits, from 'Call Me Baby' to 'Love Me Right'. With dynamic performances, cutting-edge visuals, and the energy of EXO's passionate fanbase, this concert is a must-see for K-pop fans. The group will also debut new songs, further enhancing the concert's excitement. Fans can expect a spectacular show, combining EXO's world-class talent with an atmosphere of celebration and unity among fans.",
-        "genre": "Exhibition",
-        "release_date": "2023-03-12",
-        "ranking": 1,
-        "price": {
-            "regular": "100 USD",
-            "vip": "170 USD"
-        },
-        "seats": {
-            "regular": 800,
-            "vip": 200
-        }
-    },
-    {
-        "show_id": 34,
-        "title": "Tech Expo 2025",
-        "poster_url": "/uploads/posters/34.jpg",
-        "description": "Tech Expo 2025 is a cutting-edge event that showcases the latest advancements in technology. The expo features everything from artificial intelligence and robotics to sustainable energy solutions. Attendees will have the chance to experience live demonstrations, attend insightful talks from industry leaders, and interact with innovators from around the globe. The expo's goal is to inspire and educate participants about the future of technology. It’s a must-attend event for anyone passionate about the tech world and its potential to shape the future.",
-        "genre": "Exhibition",
-        "release_date": "2023-01-25",
-        "ranking": 2,
-        "price": {
-            "regular": "50 USD",
-            "vip": "90 USD"
-        },
-        "seats": {
-            "regular": 1000,
-            "vip": 300
-        }
-    },
-    {
-        "show_id": 35,
-        "title": "Aladdin",
-        "poster_url": "/uploads/posters/35.jpg",
-        "description": "Aladdin is a magical musical that transports audiences to the enchanting city of Agrabah. The story follows Aladdin, a poor street rat, who discovers a magical lamp and is granted three wishes by a mischievous genie. As Aladdin tries to win the heart of Princess Jasmine, he learns valuable lessons about self-worth and honesty. The show features unforgettable music by Alan Menken, including the iconic 'A Whole New World'. With its dazzling set designs, special effects, and fun-filled story, Aladdin is an adventure that captivates audiences of all ages.",
-        "genre": "Exhibition",
-        "release_date": "2023-03-23",
-        "ranking": 5,
-        "price": {
-            "regular": "75 USD",
-            "vip": "120 USD"
-        },
-        "seats": {
-            "regular": 700,
-            "vip": 150
-        }
-    },
-    {
-        "show_id": 36,
-        "title": "Tennis Open",
-        "poster_url": "/uploads/posters/36.jpg",
-        "description": "Tennis Open is one of the premier sporting events, featuring top-ranked tennis players from around the world. The competition promises fast-paced action, with exciting matches between some of the best athletes in the sport. Fans will enjoy watching intense rivalries unfold as players battle for the prestigious title. The Tennis Open is a must-attend for sports enthusiasts who appreciate the skill, dedication, and sportsmanship displayed by professional athletes. With courtside views, live commentary, and expert analysis, this event offers an immersive experience for tennis fans.",
-        "genre": "Exhibition",
-        "release_date": "2023-02-02",
-        "ranking": 3,
-        "price": {
-            "regular": "60 USD",
-            "vip": "100 USD"
-        },
-        "seats": {
-            "regular": 900,
-            "vip": 250
-        }
-    },
-    {
-        "show_id": 37,
-        "title": "Concert: TWICE Land",
-        "poster_url": "/uploads/posters/37.jpg",
-        "description": "Concert: TWICE Land is an unforgettable live performance by the K-pop girl group TWICE. Known for their catchy songs and energetic performances, TWICE brings their greatest hits to the stage. The concert features a high-energy mix of fan-favorite tracks and new releases, with stunning choreography and special effects. Fans will also experience interactive moments, making it feel as though they are a part of the show. This event is a celebration of TWICE's global success and their deep connection with fans across the world.",
-        "genre": "Exhibition",
-        "release_date": "2023-08-28",
-        "ranking": 4,
-        "price": {
-            "regular": "95 USD",
-            "vip": "160 USD"
-        },
-        "seats": {
-            "regular": 750,
-            "vip": 200
-        }
-    },
-    {
-        "show_id": 38,
-        "title": "West Side Story",
-        "poster_url": "/uploads/posters/38.jpg",
-        "description": "West Side Story is a timeless musical that tells the story of two star-crossed lovers, Tony and Maria, set against the backdrop of New York City’s gang violence. The show features iconic music by Leonard Bernstein, including songs like 'Tonight' and 'Somewhere'. With its powerful themes of love, prejudice, and social divide, West Side Story resonates with audiences of all generations. The dynamic choreography and stunning set designs transport the audience to the streets of New York. This show is a masterpiece of musical theater that will leave a lasting impact.",
-        "genre": "Exhibition",
-        "release_date": "2023-01-06",
-        "ranking": 6,
-        "price": {
-            "regular": "85 USD",
-            "vip": "150 USD"
-        },
-        "seats": {
-            "regular": 800,
-            "vip": 250
-        }
-    },
-    {
-        "show_id": 39,
-        "title": "Chicago",
-        "poster_url": "/uploads/posters/39.jpg",
-        "description": "Chicago is a dazzling musical set in the Roaring Twenties, following the stories of two women who become famous for their crimes. With its jazz-filled score, including songs like 'All That Jazz' and 'Razzle Dazzle', Chicago is an exhilarating exploration of fame, corruption, and the justice system. The musical's sharp choreography, slick performances, and witty dialogue captivate the audience from start to finish. Chicago has remained a favorite on Broadway for its bold storytelling and captivating style. It's an iconic show that will leave you tapping your feet and reflecting on its provocative themes.",
-        "genre": "Exhibition",
-        "release_date": "2023-10-02",
-        "ranking": 7,
-        "price": {
-            "regular": "80 USD",
-            "vip": "140 USD"
-        },
-        "seats": {
-            "regular": 750,
-            "vip": 200
-        }
-    },
-    {
-        "show_id": 40,
-        "title": "Miss Saigon",
-        "poster_url": "/uploads/posters/40.jpg",
-        "description": "Miss Saigon is a heart-wrenching musical set during the Vietnam War. The story follows the tragic love affair between a young Vietnamese woman, Kim, and an American soldier, Chris. The musical explores themes of love, sacrifice, and the devastating consequences of war. With its unforgettable score, including songs like 'The Last Night of the World' and 'I Still Believe', Miss Saigon is a powerful and emotional journey. The show’s stunning set and choreography enhance the raw emotion of the story, making it a deeply moving experience for audiences.",
-        "genre": "Musical",
-        "release_date": "2023-11-25",
-        "ranking": 11,
-        "price": {
-            "regular": "90 USD",
-            "vip": "160 USD"
-        },
-        "seats": {
-            "regular": 600,
-            "vip": 150
-        }
+    "seats": {
+      "regular": 346,
+      "vip": 145
     }
+  },
+  {
+    "show_id": 2,
+    "title": "Matilda",
+    "poster_url": "/uploads/posters/2.jpg",
+    "description": "Matilda the Musical tells the inspiring story of a young girl with extraordinary powers who stands up against the oppression of her abusive school headmistress, Miss Trunchbull. With catchy songs and a heartwarming message about the power of courage, Matilda takes the audience on a thrilling ride of self-discovery and justice. The show features moments of incredible humor, along with powerful emotional scenes that bring Matilda’s journey to life. The dazzling choreography and vibrant set design create a truly magical atmosphere. The music will stay with you long after the final curtain call.",
+    "genre": "Concerts",
+    "release_date": "2023-02-22",
+    "ranking": 5,
+    "price": {
+      "regular": "45 USD",
+      "vip": "80 USD"
+    },
+    "seats": {
+      "regular": 400,
+      "vip": 100
+    }
+  },
+  {
+    "show_id": 3,
+    "title": "Family Fun Fair",
+    "poster_url": "/uploads/posters/3.jpg",
+    "description": "The Family Fun Fair is a vibrant, family-friendly event featuring a variety of games, performances, and exciting attractions for all ages. From carnival rides to live entertainment, it's the perfect way to spend an afternoon with the whole family. Enjoy delicious food, fun games, and performances that will make you smile from ear to ear! This event is filled with color, music, and excitement that will entertain both the young and the young-at-heart. Don't miss out on the chance to experience the magic of the fair, where memories are made and laughter fills the air.",
+    "genre": "Concerts",
+    "release_date": "2023-10-30",
+    "ranking": 2,
+    "price": {
+      "regular": "30 USD",
+      "vip": "60 USD"
+    },
+    "seats": {
+      "regular": 800,
+      "vip": 200
+    }
+  },
+  {
+    "show_id": 4,
+    "title": "Hamilton",
+    "poster_url": "/uploads/posters/4.jpg",
+    "description": "Hamilton is a revolutionary musical that brings to life the founding father Alexander Hamilton through an innovative blend of hip-hop, R&B, and traditional musical theater. The show’s fast-paced and captivating storytelling has earned it multiple awards and an everlasting place in the hearts of audiences worldwide. With its iconic songs and complex characters, Hamilton challenges perceptions of history and heroism. The stunning choreography and dynamic cast add depth to every performance. Prepare to be inspired and moved by the tale of ambition, love, and revolution.",
+    "genre": "Concerts",
+    "release_date": "2023-02-17",
+    "ranking": 6,
+    "price": {
+      "regular": "120 USD",
+      "vip": "200 USD"
+    },
+    "seats": {
+      "regular": 600,
+      "vip": 200
+    }
+  },
+  {
+    "show_id": 5,
+    "title": "Matilda",
+    "poster_url": "/uploads/posters/5.jpg",
+    "description": "Matilda the Musical tells the inspiring story of a young girl with extraordinary powers who stands up against the oppression of her abusive school headmistress, Miss Trunchbull. With catchy songs and a heartwarming message about the power of courage, Matilda takes the audience on a thrilling ride of self-discovery and justice. The show features moments of incredible humor, along with powerful emotional scenes that bring Matilda’s journey to life. The dazzling choreography and vibrant set design create a truly magical atmosphere. The music will stay with you long after the final curtain call.",
+    "genre": "Concerts",
+    "release_date": "2023-11-05",
+    "ranking": 7,
+    "price": {
+      "regular": "45 USD",
+      "vip": "75 USD"
+    },
+    "seats": {
+      "regular": 400,
+      "vip": 100
+    }
+  },
+  {
+    "show_id": 6,
+    "title": "Children's Theater",
+    "poster_url": "/uploads/posters/6.jpg",
+    "description": "Children's Theater is an enchanting experience designed to captivate the imagination of young audiences. Through colorful costumes, lively songs, and interactive performances, it brings stories to life in ways that are both fun and educational. The show features a variety of characters and whimsical plots that will spark creativity in children. It’s a fantastic way to introduce kids to the magic of theater and storytelling, offering them an immersive experience they'll cherish forever. The cast includes energetic performers who keep the children engaged and entertained throughout the show.",
+    "genre": "Concerts",
+    "release_date": "2023-11-29",
+    "ranking": 3,
+    "price": {
+      "regular": "20 USD",
+      "vip": "40 USD"
+    },
+    "seats": {
+      "regular": 497,
+      "vip": 98
+    }
+  },
+  {
+    "show_id": 7,
+    "title": "Family Fun Fair",
+    "poster_url": "/uploads/posters/7.jpg",
+    "description": "The Family Fun Fair is a vibrant, family-friendly event featuring a variety of games, performances, and exciting attractions for all ages. From carnival rides to live entertainment, it's the perfect way to spend an afternoon with the whole family. Enjoy delicious food, fun games, and performances that will make you smile from ear to ear! This event is filled with color, music, and excitement that will entertain both the young and the young-at-heart. Don't miss out on the chance to experience the magic of the fair, where memories are made and laughter fills the air.",
+    "genre": "Concerts",
+    "release_date": "2023-04-23",
+    "ranking": 4,
+    "price": {
+      "regular": "30 USD",
+      "vip": "50 USD"
+    },
+    "seats": {
+      "regular": 600,
+      "vip": 400
+    }
+  },
+  {
+    "show_id": 8,
+    "title": "Ballet Performance",
+    "poster_url": "/uploads/posters/8.jpg",
+    "description": "Ballet Performance showcases the elegance and grace of classical ballet. Dancers tell timeless stories through stunning choreography and captivating music. From delicate pirouettes to powerful leaps, the ballet company brings to life the beauty and discipline of this art form in every performance. The show features a collection of beloved classical pieces that highlight the emotional power of movement. The audience is transported to a world of beauty and precision, where every gesture tells a story.",
+    "genre": "Musical",
+    "release_date": "2023-01-04",
+    "ranking": 1,
+    "price": {
+      "regular": "80 USD",
+      "vip": "150 USD"
+    },
+    "seats": {
+      "regular": 200,
+      "vip": 100
+    }
+  },
+  {
+    "show_id": 9,
+    "title": "Frozen",
+    "poster_url": "/uploads/posters/9.jpg",
+    "description": "Frozen the Musical brings to life the beloved characters of Elsa, Anna, and Olaf in a stunning stage adaptation of the hit animated movie. Featuring the iconic songs 'Let It Go' and 'Do You Want to Build a Snowman?', this magical production is sure to warm your heart and leave you breathless with its spectacular effects and heartfelt performances. The show captures the magic of the movie while adding a live theater experience that takes it to new heights. Elsa’s powers and Anna’s love are brought to life with breathtaking visuals and special effects that will leave you awestruck.",
+    "genre": "Musical",
+    "release_date": "2023-08-05",
+    "ranking": 2,
+    "price": {
+      "regular": "90 USD",
+      "vip": "150 USD"
+    },
+    "seats": {
+      "regular": 400,
+      "vip": 100
+    }
+  },
+  {
+    "show_id": 10,
+    "title": "Miss Saigon",
+    "poster_url": "/uploads/posters/10.jpg",
+    "description": "Miss Saigon is a musical set during the Vietnam War, telling the story of a young Vietnamese woman named Kim, who falls in love with an American soldier, Chris. The production explores themes of love, loss, and the impact of war on individuals. With its powerful songs and emotional narrative, the show has become a staple in musical theater. The musical’s striking visual effects and memorable music make it one of the most powerful performances in history. Miss Saigon continues to resonate with audiences worldwide through its timeless themes of love and sacrifice.",
+    "genre": "Musical",
+    "release_date": "2023-04-21",
+    "ranking": 3,
+    "price": {
+      "regular": "75 USD",
+      "vip": "130 USD"
+    },
+    "seats": {
+      "regular": 500,
+      "vip": 150
+    }
+  },
+  {
+    "show_id": 11,
+    "title": "Concert: BLACKPINK",
+    "poster_url": "/uploads/posters/11.jpg",
+    "description": "BLACKPINK is one of the most popular K-pop groups globally, and this concert offers a high-energy performance of their greatest hits. With incredible stage visuals and choreography, the concert showcases their unmatched talent and presence. From 'DDU-DU DDU-DU' to 'How You Like That', BLACKPINK’s concert is an electrifying experience for fans. The concert atmosphere is packed with excitement, as their powerful vocals and intense performances take center stage. BLACKPINK delivers a show like no other, making it a must-see for K-pop fans worldwide.",
+    "genre": "Musical",
+    "release_date": "2023-02-17",
+    "ranking": 4,
+    "price": {
+      "regular": "100 USD",
+      "vip": "180 USD"
+    },
+    "seats": {
+      "regular": 600,
+      "vip": 200
+    }
+  },
+  {
+    "show_id": 12,
+    "title": "Mamma Mia!",
+    "poster_url": "/uploads/posters/12.jpg",
+    "description": "Mamma Mia! is a feel-good musical that celebrates the timeless hits of ABBA. The story follows Sophie as she tries to discover who her father is just days before her wedding. Featuring iconic songs like 'Dancing Queen', 'Take a Chance on Me', and 'The Winner Takes It All', this show brings joy to audiences around the world. The musical combines humor, romance, and catchy tunes, making it a great choice for fans of ABBA and musical theater. Mamma Mia! continues to enchant audiences with its vibrant atmosphere and infectious songs.",
+    "genre": "Musical",
+    "release_date": "2023-06-26",
+    "ranking": 5,
+    "price": {
+      "regular": "70 USD",
+      "vip": "120 USD"
+    },
+    "seats": {
+      "regular": 450,
+      "vip": 150
+    }
+  },
+  {
+    "show_id": 13,
+    "title": "West Side Story",
+    "poster_url": "/uploads/posters/13.jpg",
+    "description": "West Side Story is a classic musical that takes place in New York City and centers on the forbidden love between Tony and Maria, two young people from opposing street gangs. The show explores themes of love, prejudice, and social divisions. With its unforgettable music by Leonard Bernstein and lyrics by Stephen Sondheim, the production includes iconic songs like 'Tonight' and 'America'. West Side Story continues to be one of the most influential musicals, offering a powerful commentary on race and class in America. Its gripping story and beautiful choreography have earned it a place in musical theater history.",
+    "genre": "Musical",
+    "release_date": "2023-01-23",
+    "ranking": 6,
+    "price": {
+      "regular": "65 USD",
+      "vip": "110 USD"
+    },
+    "seats": {
+      "regular": 500,
+      "vip": 200
+    }
+  },
+  {
+    "show_id": 14,
+    "title": "Golf Tournament",
+    "poster_url": "/uploads/posters/14.jpg",
+    "description": "The Golf Tournament is an exciting event that brings together top players from around the world. The competition is intense as the best golfers vie for the championship title. With stunning views of the course and thrilling moments of skill and precision, the tournament promises to be a memorable experience for fans of the sport. Attendees will witness world-class performances and the dedication of the athletes. Whether you're a seasoned golfer or a fan, this tournament offers an unforgettable day of action and sportsmanship.",
+    "genre": "Musical",
+    "release_date": "2023-03-05",
+    "ranking": 7,
+    "price": {
+      "regular": "50 USD",
+      "vip": "90 USD"
+    },
+    "seats": {
+      "regular": 600,
+      "vip": 100
+    }
+  },
+  {
+    "show_id": 15,
+    "title": "Cats",
+    "poster_url": "/uploads/posters/15.jpg",
+    "description": "Cats is a beloved musical that takes place in a junkyard, where the Jellicle Cats gather for their annual ball. The show features a series of musical numbers that introduce each of the quirky and fascinating feline characters. With its unforgettable music, including the iconic 'Memory', Cats has become one of the most well-known musicals in the world. The show’s unique blend of dance, song, and spectacle captivates audiences, and its themes of identity and belonging resonate deeply with viewers. Cats continues to be a worldwide favorite with its enchanting and mysterious atmosphere.",
+    "genre": "Musical",
+    "release_date": "2023-05-31",
+    "ranking": 8,
+    "price": {
+      "regular": "60 USD",
+      "vip": "110 USD"
+    },
+    "seats": {
+      "regular": 500,
+      "vip": 150
+    }
+  },
+  {
+    "show_id": 16,
+    "title": "Concert: EXO Planet",
+    "poster_url": "/uploads/posters/16.jpg",
+    "description": "EXO Planet is an electrifying concert showcasing EXO's biggest hits. As one of the leading K-pop groups, EXO’s performance is packed with high-energy dance moves, stunning visuals, and powerful vocals. The concert features a dynamic setlist of songs that have earned them international fame, including 'Growl', 'Love Me Right', and 'Call Me Baby'. Fans will be treated to an unforgettable live performance filled with the energy and excitement EXO is known for. This concert brings the magic of K-pop to the stage in an unforgettable experience.",
+    "genre": "Musical",
+    "release_date": "2023-04-09",
+    "ranking": 12,
+    "price": {
+      "regular": "90 USD",
+      "vip": "150 USD"
+    },
+    "seats": {
+      "regular": 700,
+      "vip": 300
+    }
+  },
+  {
+    "show_id": 17,
+    "title": "The Lion King",
+    "poster_url": "/uploads/posters/17.jpg",
+    "description": "The Lion King is a visually stunning musical that brings the beloved Disney movie to life. Set in the African savannah, the show follows Simba, a young lion who must reclaim his place as king after the tragic death of his father. The show features an extraordinary mix of puppetry, vibrant costumes, and unforgettable songs, including 'Circle of Life' and 'Hakuna Matata'. The powerful performances, along with the magical stage effects, transport the audience into a world of wonder and emotion. Whether you're experiencing it for the first time or returning to relive the magic, The Lion King is an unforgettable theater experience.",
+    "genre": "Musical",
+    "release_date": "2023-12-05",
+    "ranking": 9,
+    "price": {
+      "regular": "80 USD",
+      "vip": "140 USD"
+    },
+    "seats": {
+      "regular": 600,
+      "vip": 250
+    }
+  },
+  {
+    "show_id": 18,
+    "title": "Kinky Boots",
+    "poster_url": "/uploads/posters/18.jpg",
+    "description": "Kinky Boots tells the story of Charlie Price, a man who inherits his father’s failing shoe factory and teams up with drag queen Lola to create a line of high-heeled boots for men. The musical is filled with vibrant, energetic performances and a heartwarming message about accepting others for who they are. With dazzling costumes and catchy songs, Kinky Boots has earned its place as a Broadway favorite. The show combines humor, emotion, and bold performances to bring an unforgettable experience to the stage. The powerful themes of identity and self-expression resonate with audiences around the world.",
+    "genre": "Musical",
+    "release_date": "2023-04-30",
+    "ranking": 10,
+    "price": {
+      "regular": "75 USD",
+      "vip": "130 USD"
+    },
+    "seats": {
+      "regular": 500,
+      "vip": 150
+    }
+  },
+  {
+    "show_id": 19,
+    "title": "Concert: TWICE Land",
+    "poster_url": "/uploads/posters/19.jpg",
+    "description": "TWICE Land is a concert by the world-renowned K-pop group TWICE, offering a vibrant and high-energy performance. Fans will be treated to the group's greatest hits, including 'Fancy', 'Likey', and 'Feel Special'. The concert is a celebration of TWICE's journey, showcasing their remarkable talent and captivating stage presence. The atmosphere is filled with excitement as the group delivers electrifying performances and unforgettable moments. With stunning visuals, synchronized choreography, and a strong connection with their fans, TWICE Land promises an unforgettable experience.",
+    "genre": "Concerts",
+    "release_date": "2023-08-21",
+    "ranking": 8,
+    "price": {
+      "regular": "95 USD",
+      "vip": "160 USD"
+    },
+    "seats": {
+      "regular": 700,
+      "vip": 200
+    }
+  },
+  {
+    "show_id": 20,
+    "title": "Concert: EXO Planet",
+    "poster_url": "/uploads/posters/20.jpg",
+    "description": "EXO Planet is a spectacular concert event by EXO, one of the biggest names in K-pop. The concert features the group's most popular songs, including 'Growl', 'Love Me Right', and 'Call Me Baby'. Fans will be amazed by EXO's energetic performances and the stunning visuals that accompany the show. EXO Planet brings together a perfect blend of powerful vocals, intricate choreography, and electrifying energy. With a setlist full of their greatest hits, the concert offers a mesmerizing experience for K-pop fans worldwide.",
+    "genre": "Concerts",
+    "release_date": "2023-07-09",
+    "ranking": 9,
+    "price": {
+      "regular": "100 USD",
+      "vip": "170 USD"
+    },
+    "seats": {
+      "regular": 750,
+      "vip": 250
+    }
+  },
+  {
+    "show_id": 21,
+    "title": "Rent",
+    "poster_url": "/uploads/posters/21.jpg",
+    "description": "Rent is a groundbreaking rock musical about a group of artists and friends struggling to survive and create in New York City’s East Village. The musical addresses themes of love, loss, and community, while exploring the lives of individuals facing societal challenges. Songs like 'Seasons of Love' and 'La Vie Boheme' have become anthems for audiences around the world. With its heartfelt narrative and powerful performances, Rent has become a cultural phenomenon. It continues to resonate with audiences by showcasing the enduring strength of love and friendship in the face of adversity.",
+    "genre": "Concerts",
+    "release_date": "2023-05-17",
+    "ranking": 11,
+    "price": {
+      "regular": "80 USD",
+      "vip": "140 USD"
+    },
+    "seats": {
+      "regular": 550,
+      "vip": 150
+    }
+  },
+  {
+    "show_id": 22,
+    "title": "The Lion King",
+    "poster_url": "/uploads/posters/22.jpg",
+    "description": "The Lion King is a spectacular musical that tells the story of Simba, a young lion prince, and his journey to becoming king. Set against the backdrop of the African savannah, the show features unforgettable music by Elton John and Tim Rice, including songs like 'Circle of Life' and 'Hakuna Matata'. The musical is known for its breathtaking puppetry and stunning visual effects that bring the animal kingdom to life on stage. The emotional narrative, combined with the beautiful performances, makes it an unforgettable experience for all ages. The Lion King continues to captivate audiences with its universal themes of love, loss, and the circle of life.",
+    "genre": "Concerts",
+    "release_date": "2023-11-22",
+    "ranking": 10,
+    "price": {
+      "regular": "85 USD",
+      "vip": "150 USD"
+    },
+    "seats": {
+      "regular": 650,
+      "vip": 250
+    }
+  },
+  {
+    "show_id": 23,
+    "title": "Family Fun Fair",
+    "poster_url": "/uploads/posters/23.jpg",
+    "description": "The Family Fun Fair is an exciting event for families of all ages. With a wide range of activities, including games, rides, and entertainment, there’s something for everyone. Visitors can enjoy delicious food, participate in fun contests, and create lasting memories with their loved ones. The fair offers a variety of attractions such as a petting zoo, carnival games, and live performances. Whether you're seeking adventure or relaxation, the Family Fun Fair is the perfect destination for a day of enjoyment and family bonding.",
+    "genre": "Concerts",
+    "release_date": "2023-05-06",
+    "ranking": 12,
+    "price": {
+      "regular": "25 USD",
+      "vip": "50 USD"
+    },
+    "seats": {
+      "regular": 800,
+      "vip": 100
+    }
+  },
+  {
+    "show_id": 24,
+    "title": "Golf Tournament",
+    "poster_url": "/uploads/posters/24.jpg",
+    "description": "The Golf Tournament is an exciting competition that brings together the best golfers from around the world. The tournament offers a challenging course with breathtaking views and a fierce competition to determine the winner. Fans can watch their favorite players compete in this prestigious event, where precision, skill, and strategy are key. The tournament is a must-attend event for golf enthusiasts, offering a chance to witness world-class performances on the green. With its competitive atmosphere and stunning course, the Golf Tournament is a highlight for sports fans.",
+    "genre": "Concerts",
+    "release_date": "2023-05-19",
+    "ranking": 13,
+    "price": {
+      "regular": "50 USD",
+      "vip": "90 USD"
+    },
+    "seats": {
+      "regular": 700,
+      "vip": 150
+    }
+  },
+  {
+    "show_id": 25,
+    "title": "Children's Theater",
+    "poster_url": "/uploads/posters/25.jpg",
+    "description": "Children's Theater offers a delightful and engaging experience for young audiences. The performance features a mix of storytelling, music, and dance that captivates children and families alike. Through colorful costumes and interactive performances, children can immerse themselves in magical worlds and imaginative adventures. The show teaches valuable lessons about kindness, friendship, and creativity. With fun and educational themes, Children's Theater is the perfect way to introduce kids to the joys of live theater.",
+    "genre": "Children/Family",
+    "release_date": "2023-12-17",
+    "ranking": 1,
+    "price": {
+      "regular": "40 USD",
+      "vip": "75 USD"
+    },
+    "seats": {
+      "regular": 500,
+      "vip": 100
+    }
+  },
+  {
+    "show_id": 26,
+    "title": "Wicked",
+    "poster_url": "/uploads/posters/26.jpg",
+    "description": "Wicked is a fantastical musical that tells the untold story of the witches of Oz. The show follows Elphaba, the misunderstood green witch, and Glinda, the popular but naïve witch, as they form an unlikely friendship. As the musical explores themes of friendship, identity, and the nature of good versus evil, it captivates audiences with its beautiful score and stunning visuals. Songs like 'Defying Gravity' and 'For Good' have become iconic and resonant with audiences worldwide. Wicked is a powerful story that will leave audiences thinking long after the curtain falls.",
+    "genre": "Children/Family",
+    "release_date": "2023-01-17",
+    "ranking": 2,
+    "price": {
+      "regular": "75 USD",
+      "vip": "120 USD"
+    },
+    "seats": {
+      "regular": 600,
+      "vip": 200
+    }
+  },
+  {
+    "show_id": 27,
+    "title": "Football Match",
+    "poster_url": "/uploads/posters/27.jpg",
+    "description": "The Football Match is a thrilling sporting event that brings together top teams from around the world. The match offers an intense atmosphere, with fans cheering for their favorite teams as they compete for the championship. With skilled players, fast-paced action, and unforgettable moments, this match promises excitement from start to finish. Whether you're a die-hard fan or a casual spectator, the Football Match is an event not to be missed. The energy and passion of the crowd, combined with the intensity of the game, make this a unique experience.",
+    "genre": "Children/Family",
+    "release_date": "2023-02-03",
+    "ranking": 3,
+    "price": {
+      "regular": "45 USD",
+      "vip": "85 USD"
+    },
+    "seats": {
+      "regular": 800,
+      "vip": 150
+    }
+  },
+  {
+    "show_id": 28,
+    "title": "Camping Adventure",
+    "poster_url": "/uploads/posters/28.jpg",
+    "description": "Camping Adventure is a thrilling outdoor event that invites families and adventure seekers to explore nature. The event includes hiking, bonfires, and team-building exercises that strengthen relationships while connecting with the great outdoors. Participants can enjoy a variety of outdoor activities, such as fishing, wildlife watching, and stargazing. The experience is designed to create lasting memories while promoting environmental awareness. Camping Adventure is the perfect opportunity to escape the hustle and bustle of daily life and immerse yourself in the tranquility of nature.",
+    "genre": "Children/Family",
+    "release_date": "2023-06-11",
+    "ranking": 5,
+    "price": {
+      "regular": "30 USD",
+      "vip": "60 USD"
+    },
+    "seats": {
+      "regular": 600,
+      "vip": 120
+    }
+  },
+  {
+    "show_id": 29,
+    "title": "Tech Expo 2025",
+    "poster_url": "/uploads/posters/29.jpg",
+    "description": "Tech Expo 2025 is a groundbreaking event that showcases the latest advancements in technology. Attendees can experience cutting-edge innovations in fields like AI, robotics, and sustainable energy. The expo features a wide range of interactive exhibits, including live demonstrations and keynote speakers from top tech companies. It's the perfect opportunity for tech enthusiasts to explore the future of technology and interact with experts in the field. With its emphasis on innovation and exploration, Tech Expo 2025 is an event that promises to inspire and educate.",
+    "genre": "Children/Family",
+    "release_date": "2023-11-26",
+    "ranking": 4,
+    "price": {
+      "regular": "50 USD",
+      "vip": "90 USD"
+    },
+    "seats": {
+      "regular": 700,
+      "vip": 150
+    }
+  },
+  {
+    "show_id": 30,
+    "title": "Aladdin",
+    "poster_url": "/uploads/posters/30.jpg",
+    "description": "Aladdin is a magical tale of adventure, love, and self-discovery. The show follows Aladdin, a young man who discovers a magical lamp and is granted three wishes by a genie. As Aladdin navigates through his newfound wealth and power, he learns valuable lessons about courage, honesty, and the true meaning of friendship. With stunning visuals, memorable music, and a captivating storyline, Aladdin transports audiences to the enchanting world of Agrabah. The musical's timeless themes resonate with all ages, making it a truly unforgettable experience for the whole family.",
+    "genre": "Children/Family",
+    "release_date": "2023-03-13",
+    "ranking": 6,
+    "price": {
+      "regular": "60 USD",
+      "vip": "110 USD"
+    },
+    "seats": {
+      "regular": 650,
+      "vip": 200
+    }
+  },
+  {
+    "show_id": 31,
+    "title": "Children's Theater",
+    "poster_url": "/uploads/posters/31.jpg",
+    "description": "Children's Theater is a delightful and interactive performance designed to entertain young audiences. The show features a mix of storytelling, music, and dance, all tailored to engage children and spark their imaginations. Each performance offers a fun, educational experience that teaches valuable lessons about friendship, teamwork, and creativity. With colorful costumes and lively performances, the theater is a magical world where children can immerse themselves in a story. It's a wonderful opportunity for families to enjoy an afternoon together, making lasting memories.",
+    "genre": "Children/Family",
+    "release_date": "2023-05-15",
+    "ranking": 7,
+    "price": {
+      "regular": "30 USD",
+      "vip": "55 USD"
+    },
+    "seats": {
+      "regular": 500,
+      "vip": 100
+    }
+  },
+  {
+    "show_id": 32,
+    "title": "Ballet Performance",
+    "poster_url": "/uploads/posters/32.jpg",
+    "description": "Ballet Performance is an exquisite display of grace and elegance, featuring world-class ballet dancers performing classical and contemporary pieces. The show combines stunning choreography, beautiful costumes, and live music to create an unforgettable experience. Whether you're a longtime ballet enthusiast or new to the art form, this performance will captivate you with its precision and artistry. The program includes both iconic ballet routines and fresh, innovative compositions that highlight the depth of ballet's expressive power. It's an evening of culture and sophistication, perfect for those seeking a refined night out.",
+    "genre": "Children/Family",
+    "release_date": "2023-10-26",
+    "ranking": 8,
+    "price": {
+      "regular": "50 USD",
+      "vip": "90 USD"
+    },
+    "seats": {
+      "regular": 450,
+      "vip": 150
+    }
+  },
+  {
+    "show_id": 33,
+    "title": "Concert: EXO Planet",
+    "poster_url": "/uploads/posters/33.jpg",
+    "description": "Concert: EXO Planet is an electrifying musical event showcasing the global phenomenon EXO. The concert will feature EXO's biggest hits, from 'Call Me Baby' to 'Love Me Right'. With dynamic performances, cutting-edge visuals, and the energy of EXO's passionate fanbase, this concert is a must-see for K-pop fans. The group will also debut new songs, further enhancing the concert's excitement. Fans can expect a spectacular show, combining EXO's world-class talent with an atmosphere of celebration and unity among fans.",
+    "genre": "Exhibition",
+    "release_date": "2023-03-12",
+    "ranking": 1,
+    "price": {
+      "regular": "100 USD",
+      "vip": "170 USD"
+    },
+    "seats": {
+      "regular": 800,
+      "vip": 200
+    }
+  },
+  {
+    "show_id": 34,
+    "title": "Tech Expo 2025",
+    "poster_url": "/uploads/posters/34.jpg",
+    "description": "Tech Expo 2025 is a cutting-edge event that showcases the latest advancements in technology. The expo features everything from artificial intelligence and robotics to sustainable energy solutions. Attendees will have the chance to experience live demonstrations, attend insightful talks from industry leaders, and interact with innovators from around the globe. The expo's goal is to inspire and educate participants about the future of technology. It’s a must-attend event for anyone passionate about the tech world and its potential to shape the future.",
+    "genre": "Exhibition",
+    "release_date": "2023-01-25",
+    "ranking": 2,
+    "price": {
+      "regular": "50 USD",
+      "vip": "90 USD"
+    },
+    "seats": {
+      "regular": 1000,
+      "vip": 300
+    }
+  },
+  {
+    "show_id": 35,
+    "title": "Aladdin",
+    "poster_url": "/uploads/posters/35.jpg",
+    "description": "Aladdin is a magical musical that transports audiences to the enchanting city of Agrabah. The story follows Aladdin, a poor street rat, who discovers a magical lamp and is granted three wishes by a mischievous genie. As Aladdin tries to win the heart of Princess Jasmine, he learns valuable lessons about self-worth and honesty. The show features unforgettable music by Alan Menken, including the iconic 'A Whole New World'. With its dazzling set designs, special effects, and fun-filled story, Aladdin is an adventure that captivates audiences of all ages.",
+    "genre": "Exhibition",
+    "release_date": "2023-03-23",
+    "ranking": 5,
+    "price": {
+      "regular": "75 USD",
+      "vip": "120 USD"
+    },
+    "seats": {
+      "regular": 700,
+      "vip": 150
+    }
+  },
+  {
+    "show_id": 36,
+    "title": "Tennis Open",
+    "poster_url": "/uploads/posters/36.jpg",
+    "description": "Tennis Open is one of the premier sporting events, featuring top-ranked tennis players from around the world. The competition promises fast-paced action, with exciting matches between some of the best athletes in the sport. Fans will enjoy watching intense rivalries unfold as players battle for the prestigious title. The Tennis Open is a must-attend for sports enthusiasts who appreciate the skill, dedication, and sportsmanship displayed by professional athletes. With courtside views, live commentary, and expert analysis, this event offers an immersive experience for tennis fans.",
+    "genre": "Exhibition",
+    "release_date": "2023-02-02",
+    "ranking": 3,
+    "price": {
+      "regular": "60 USD",
+      "vip": "100 USD"
+    },
+    "seats": {
+      "regular": 900,
+      "vip": 250
+    }
+  },
+  {
+    "show_id": 37,
+    "title": "Concert: TWICE Land",
+    "poster_url": "/uploads/posters/37.jpg",
+    "description": "Concert: TWICE Land is an unforgettable live performance by the K-pop girl group TWICE. Known for their catchy songs and energetic performances, TWICE brings their greatest hits to the stage. The concert features a high-energy mix of fan-favorite tracks and new releases, with stunning choreography and special effects. Fans will also experience interactive moments, making it feel as though they are a part of the show. This event is a celebration of TWICE's global success and their deep connection with fans across the world.",
+    "genre": "Exhibition",
+    "release_date": "2023-08-28",
+    "ranking": 4,
+    "price": {
+      "regular": "95 USD",
+      "vip": "160 USD"
+    },
+    "seats": {
+      "regular": 750,
+      "vip": 200
+    }
+  },
+  {
+    "show_id": 38,
+    "title": "West Side Story",
+    "poster_url": "/uploads/posters/38.jpg",
+    "description": "West Side Story is a timeless musical that tells the story of two star-crossed lovers, Tony and Maria, set against the backdrop of New York City’s gang violence. The show features iconic music by Leonard Bernstein, including songs like 'Tonight' and 'Somewhere'. With its powerful themes of love, prejudice, and social divide, West Side Story resonates with audiences of all generations. The dynamic choreography and stunning set designs transport the audience to the streets of New York. This show is a masterpiece of musical theater that will leave a lasting impact.",
+    "genre": "Exhibition",
+    "release_date": "2023-01-06",
+    "ranking": 6,
+    "price": {
+      "regular": "85 USD",
+      "vip": "150 USD"
+    },
+    "seats": {
+      "regular": 800,
+      "vip": 250
+    }
+  },
+  {
+    "show_id": 39,
+    "title": "Chicago",
+    "poster_url": "/uploads/posters/39.jpg",
+    "description": "Chicago is a dazzling musical set in the Roaring Twenties, following the stories of two women who become famous for their crimes. With its jazz-filled score, including songs like 'All That Jazz' and 'Razzle Dazzle', Chicago is an exhilarating exploration of fame, corruption, and the justice system. The musical's sharp choreography, slick performances, and witty dialogue captivate the audience from start to finish. Chicago has remained a favorite on Broadway for its bold storytelling and captivating style. It's an iconic show that will leave you tapping your feet and reflecting on its provocative themes.",
+    "genre": "Exhibition",
+    "release_date": "2023-10-02",
+    "ranking": 7,
+    "price": {
+      "regular": "80 USD",
+      "vip": "140 USD"
+    },
+    "seats": {
+      "regular": 750,
+      "vip": 200
+    }
+  },
+  {
+    "show_id": 40,
+    "title": "Miss Saigon",
+    "poster_url": "/uploads/posters/40.jpg",
+    "description": "Miss Saigon is a heart-wrenching musical set during the Vietnam War. The story follows the tragic love affair between a young Vietnamese woman, Kim, and an American soldier, Chris. The musical explores themes of love, sacrifice, and the devastating consequences of war. With its unforgettable score, including songs like 'The Last Night of the World' and 'I Still Believe', Miss Saigon is a powerful and emotional journey. The show’s stunning set and choreography enhance the raw emotion of the story, making it a deeply moving experience for audiences.",
+    "genre": "Musical",
+    "release_date": "2023-11-25",
+    "ranking": 11,
+    "price": {
+      "regular": "90 USD",
+      "vip": "160 USD"
+    },
+    "seats": {
+      "regular": 600,
+      "vip": 150
+    }
+  }
 ]

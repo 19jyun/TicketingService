@@ -1,0 +1,67 @@
+.card {
+    width: 70%;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    margin: 0;
+}
+
+.expandableContent {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+}
+
+.card.expanded .expandableContent {
+    max-height: 500px;
+    /* 스크롤 가능한 최대 높이 설정 */
+    opacity: 1;
+    padding: 20px;
+}
+
+.scrollableList {
+    max-height: 400px;
+    /* 스크롤 가능 영역 높이 */
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.scrollableList::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scrollableList::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.scrollableList::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+}
+
+.scrollableList::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
