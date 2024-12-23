@@ -51,11 +51,13 @@ const DynamicChatbot: React.FC = () => {
     currentPage = 'search';
   } else if (location.pathname.startsWith('/login') || location.pathname.startsWith('/signup')) {
     currentPage = 'auth';
+  } else if (location.pathname.startsWith('/reservation-result')) {
+    currentPage = 'reservation';
   }
 
   return (
     <Chatbot
-      loggedIn={username !== null} // Pass login status dynamically
+      loggedIn={username} // Pass login status dynamically
       currentPage={currentPage}
       showTitle={showTitle}
     />

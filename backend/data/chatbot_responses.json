@@ -1,80 +1,27 @@
 {
   "general": {
     "not_logged_in": "This feature is available only after logging in. Please log in to access the AI assistant.",
-    "greeting": "Hello! How can I assist you today?",
-    "help_options": "You can ask me about upcoming shows, reserve tickets, check weather for your reservation day, or get directions to the event."
+    "fallback": "I'm sorry, I didn't understand that. Can you rephrase or ask about a specific event or genre?"
   },
   "main_page": {
     "help_prompt": "Looking for something exciting? I can help you explore our shows. What genre or event are you interested in?",
-    "recommendation": [
-      {
-        "show_id": 1,
-        "title": "Chicago",
-        "description": "A dazzling spectacle of music and dance set in 1920s Chicago. Perfect for fans of jazz and captivating choreography.",
-        "message": "Based on popularity, I recommend Chicago. Would you like to know more?"
-      },
-      {
-        "show_id": 2,
-        "title": "Matilda",
-        "description": "An inspiring story of a young girl with extraordinary powers. A must-see for families!",
-        "message": "Matilda is a great choice for families. Should I tell you more?"
-      }
-    ],
-    "fallback": "I'm sorry, I didn't understand that. Can you rephrase or ask about a specific event or genre?"
+    "recommendation": "Here are some popular shows: {shows}. Let me know which one you'd like to book!",
+    "no_genre": "I recommend exploring concerts. Here are some top picks: {shows}. Which one are you interested in?"
   },
   "show_details_page": {
-    "specific_help": [
-      {
-        "show_id": 1,
-        "title": "Chicago",
-        "genre": "Concerts",
-        "quick_tip": "Arrive early to enjoy the pre-show jazz music in the lobby.",
-        "additional_info": "The show highlights themes of fame and justice through electrifying performances."
-      },
-      {
-        "show_id": 2,
-        "title": "Matilda",
-        "genre": "Concerts",
-        "quick_tip": "Bring the kids – they’ll love the magical set and songs!",
-        "additional_info": "Did you know? The character Miss Trunchbull is often played by a male actor in the stage version."
-      }
-    ],
-    "reservation_offer": "You can reserve tickets directly here! Just let me know if you'd like regular or VIP seating."
+    "show_info": "The show '{show_title}' is highly rated! Would you like to know more or book tickets?",
+    "reservation_offer": "You can reserve tickets for '{show_title}'. Let me know if you'd like regular or VIP seating."
+  },
+  "reservation_result_page": {
+    "successful_reservation": "Your reservation for '{show_title}' on {event_date} has been completed! Would you like to hear about some useful information about the show?",
+    "cancel_prompt": "Let me know the reservation ID or show title you want to cancel.",
+    "modify_prompt": "Which reservation would you like to modify? Please provide the reservation ID or show title.",
+    "no_reservation": "You currently have no reservations. Let me know if you'd like to book tickets."
   },
   "reservation_assistance": {
-    "weather_info": [
-      {
-        "show_id": 1,
-        "event_date": "2023-05-21",
-        "weather_forecast": "Sunny, 25°C"
-      },
-      {
-        "show_id": 2,
-        "event_date": "2023-02-22",
-        "weather_forecast": "Cloudy, 12°C"
-      }
-    ],
-    "travel_info": [
-      {
-        "show_id": 1,
-        "travel_directions": "Take the subway to Downtown Station and walk 10 minutes to the Chicago Theater."
-      },
-      {
-        "show_id": 2,
-        "travel_directions": "Parking is available at the venue. Use Gate 3 for easy access."
-      }
-    ],
-    "theme_tips": [
-      {
-        "show_id": 1,
-        "theme": "Jazz and 1920s glamor. A black and white outfit might fit the theme nicely!"
-      },
-      {
-        "show_id": 2,
-        "theme": "Magical and family-friendly. Feel free to dress casually."
-      }
-    ],
-    "successful_reservation": "Your reservation for {show_title} on {event_date} has been completed. Enjoy the show!"
+    "cancel_confirmation": "Your reservation for '{show_title}' has been successfully canceled.",
+    "modify_seats_prompt": "How many regular and VIP seats would you like to reserve for '{show_title}'?",
+    "successful_modification": "Your reservation for '{show_title}' has been successfully updated!"
   },
   "ticket_reservation": {
     "initiate": "Tell me the show title and whether you'd like regular or VIP seating, and I'll handle the rest!",
@@ -115,22 +62,40 @@
         "genre": "Musical",
         "shows": ["Frozen", "Hamilton", "Miss Saigon"]
       }
+    ]
+  },
+  "useful_information": {
+    "weather_info": [
+      {
+        "show_id": 1,
+        "event_date": "2023-05-21",
+        "weather_forecast": "Sunny, 25°C"
+      },
+      {
+        "show_id": 2,
+        "event_date": "2023-02-22",
+        "weather_forecast": "Cloudy, 12°C"
+      }
     ],
-    "based_on_ranking": {
-      "top_shows": [
-        {
-          "title": "Chicago",
-          "ranking": 1
-        },
-        {
-          "title": "Ballet Performance",
-          "ranking": 2
-        },
-        {
-          "title": "Matilda",
-          "ranking": 5
-        }
-      ]
-    }
+    "travel_info": [
+      {
+        "show_id": 1,
+        "travel_directions": "Take the subway to Downtown Station and walk 10 minutes to the Chicago Theater."
+      },
+      {
+        "show_id": 2,
+        "travel_directions": "Parking is available at the venue. Use Gate 3 for easy access."
+      }
+    ],
+    "theme_tips": [
+      {
+        "show_id": 1,
+        "theme": "Jazz and 1920s glamor. A black and white outfit might fit the theme nicely!"
+      },
+      {
+        "show_id": 2,
+        "theme": "Magical and family-friendly. Feel free to dress casually."
+      }
+    ]
   }
 }

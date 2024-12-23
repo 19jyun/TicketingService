@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import '../styles/components/Chatbot.css';
 
 interface ChatbotProps {
-  loggedIn: boolean; // Indicates user login status
+  loggedIn: string | null; // Indicates user login status
   currentPage: string; // Current page (e.g., 'main', 'showDetails', 'reservation')
   showTitle?: string | null; // Title of the current show (if applicable)
 }

@@ -1,6 +1,7 @@
 {
   "name": "ticketingservice",
   "version": "1.0.0",
+  "proxy": "http://localhost:5000",
   "description": "A React and TypeScript project for managing tickets.",
   "main": "index.js",
   "scripts": {

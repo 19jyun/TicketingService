@@ -5,10 +5,10 @@
     "password": "qwer",
     "email": "qwer@example.com",
     "interest": {
-      "Concerts": 0.9999985693372019,
-      "Musical": 1.512732947700394e-10,
-      "Children/Family": 4.768371833441086e-7,
-      "Exhibition": 9.536743415472342e-7
+      "Concerts": 0.9999999999999246,
+      "Musical": 7.975803202886656e-18,
+      "Children/Family": 2.5140984335356938e-14,
+      "Exhibition": 5.0281967345169043e-14
     }
   },
   {

@@ -37,16 +37,17 @@
 /* 검색 입력 필드 */
 .searchInput {
     padding: 8px;
-    border-radius: 4px;
+    border-radius: 25px;
     border: 1px solid #ccc;
     font-size: 16px;
     width: 250px;
+    text-align: center;
 }
 
 /* 검색 버튼 */
 .searchButton {
     padding: 8px 16px;
-    border-radius: 4px;
+    border-radius: 25px;
     border: none;
     background-color: #007bff;
     color: white;

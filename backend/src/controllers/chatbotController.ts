@@ -1,11 +1,9 @@
-// File: backend/src/controllers/chatbotController.ts
-
 import { Request, Response } from "express";
-import nlp from "compromise"; // Import Compromise
+import nlp from "compromise";
 import fs from "fs";
 import path from "path";
 
-// Load chatbot responses
+// Load chatbot responses and dummy data
 const chatbotResponsesPath = path.resolve(
   __dirname,
   "../../data/chatbot_responses.json"
@@ -13,6 +11,21 @@ const chatbotResponsesPath = path.resolve(
 const chatbotResponses = JSON.parse(
   fs.readFileSync(chatbotResponsesPath, "utf-8")
 );
+
+const dummyReservations = [
+  {
+    reservationID: 1,
+    showTitle: "Chicago",
+    seats: { regular: 2, vip: 0 },
+    userID: "1",
+  },
+  {
+    reservationID: 2,
+    showTitle: "Matilda",
+    seats: { regular: 1, vip: 1 },
+    userID: "2",
+  },
+];
 
 export const handleChatbot = (req: Request, res: Response) => {
   const { userInput, currentPage, loggedIn, showTitle } = req.body;
@@ -22,79 +35,107 @@ export const handleChatbot = (req: Request, res: Response) => {
     return res.json({ response: chatbotResponses.general.not_logged_in });
   }
 
-  // Use Compromise to process the user input
+  // Determine userID from loggedIn
+  const userID = loggedIn;
+
   const doc = nlp(userInput.toLowerCase());
 
-  // Match keywords or intents
-  if (doc.has("recommend")) {
-    // Recommend shows
-    return res.json({
-      response:
-        "I can recommend some great shows. Would you like to hear about musicals or concerts?",
-    });
-  } else if (doc.has("help") || doc.has("assist")) {
-    // General help
-    return res.json({
-      response:
-        "I can help you with reservations, recommendations, and ticket information. How can I assist you?",
-    });
-  } else if (doc.has("cancel")) {
-    // Handle cancellations
-    return res.json({
-      response:
-        "You can cancel your reservation in the profile section or let me know the show you want to cancel.",
-    });
-  } else if (doc.has("reserve") || doc.has("book")) {
-    // Handle reservations
-    if (showTitle) {
+  if (doc.has("recommend") || doc.has("recommendation")) {
+    const genreMatch = doc.match("#Noun").out("text");
+    const recommendedShows = recommendShows(genreMatch);
+    return res.json({ response: recommendedShows });
+  }
+
+  if (doc.has("reserve") || currentPage === "showDetails") {
+    if (currentPage === "showDetails" && showTitle) {
       return res.json({
-        response: `You can reserve tickets for ${showTitle}. Would you like regular or VIP seating?`,
+        response: chatbotResponses.show_details_page.reservation_offer.replace(
+          "{show_title}",
+          showTitle
+        ),
       });
     }
+
     return res.json({
-      response: "Let me know the show you'd like to book tickets for.",
+      response: chatbotResponses.ticket_reservation.initiate,
     });
-  } else if (doc.has("weather")) {
-    // Check weather for reservations
+  }
+
+  if (doc.has("cancel")) {
+    const userReservations = getReservationsByUser(userID);
+    if (userReservations.length === 0) {
+      return res.json({
+        response: chatbotResponses.reservation_result_page.no_reservation,
+      });
+    }
+
+    return res.json({
+      response: `${
+        chatbotResponses.reservation_result_page.cancel_prompt
+      } ${formatReservations(userReservations)}`,
+    });
+  }
+
+  if (doc.has("modify") || doc.has("change")) {
+    const userReservations = getReservationsByUser(userID);
+    if (userReservations.length === 0) {
+      return res.json({
+        response: chatbotResponses.reservation_result_page.no_reservation,
+      });
+    }
+
+    return res.json({
+      response: `${
+        chatbotResponses.reservation_result_page.modify_prompt
+      } ${formatReservations(userReservations)}`,
+    });
+  }
+
+  if (doc.has("weather")) {
     return res.json({
       response:
-        "Can you provide the date and location for the weather check? I’ll fetch the details for you!",
+        chatbotResponses.useful_information.weather_info[0].weather_forecast,
     });
   }
 
-  // Context-aware responses based on the current page
-  switch (currentPage) {
-    case "main":
-      if (doc.has("recommend")) {
-        return res.json({
-          response:
-            "I recommend Chicago and Hamilton. Would you like to know more?",
-        });
-      }
-      break;
+  return res.json({ response: chatbotResponses.general.fallback });
+};
 
-    case "showDetails":
-      if (doc.has("recommend")) {
-        return res.json({
-          response: `This show is highly recommended. Would you like to reserve tickets for ${showTitle}?`,
-        });
-      }
-      if (doc.has("details")) {
-        return res.json({
-          response: `${showTitle} is a popular musical about fame and justice. It's highly rated!`,
-        });
-      }
-      break;
+// Helper functions
+const recommendShows = (genre: string | null) => {
+  const shows = chatbotResponses.show_recommendations.based_on_genre.find(
+    (item: { genre: string; shows: string[] }) =>
+      item.genre.toLowerCase() === genre?.toLowerCase()
+  );
 
-    case "reservation":
-      if (doc.has("tickets")) {
-        return res.json({
-          response: "You have 2 tickets reserved for Hamilton on January 15th.",
-        });
-      }
-      break;
+  if (shows) {
+    return chatbotResponses.main_page.recommendation.replace(
+      "{shows}",
+      shows.shows.slice(0, 3).join(", ")
+    );
   }
 
-  // Fallback response if no keywords are matched
-  return res.json({ response: chatbotResponses.general.fallback });
+  const defaultShows =
+    chatbotResponses.show_recommendations.based_on_genre.find(
+      (item: { genre: string; shows: string[] }) =>
+        item.genre.toLowerCase() === "concerts"
+    );
+
+  return chatbotResponses.main_page.no_genre.replace(
+    "{shows}",
+    defaultShows.shows.slice(0, 3).join(", ")
+  );
+};
+
+const getReservationsByUser = (userID: string) => {
+  return dummyReservations.filter((res) => res.userID === userID);
+};
+
+const formatReservations = (reservations: any[]) => {
+  return reservations
+    .map(
+      (res) =>
+        `Reservation ID: ${res.reservationID}, Show: ${res.showTitle}, Seats: Regular(${res.seats.regular}), VIP(${res.seats.vip})`
+    )
+    .join("; ");
 };

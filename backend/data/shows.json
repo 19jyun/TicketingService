@@ -12,7 +12,7 @@
       "vip": "100 USD"
     },
     "seats": {
-      "regular": 346,
+      "regular": 345,
       "vip": 145
     }
   },
@@ -46,7 +46,7 @@
       "vip": "60 USD"
     },
     "seats": {
-      "regular": 800,
+      "regular": 798,
       "vip": 200
     }
   },
