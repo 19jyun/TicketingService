@@ -1,44 +1,29 @@
 .detailContainer {
     display: flex;
-    /* Flexbox 사용으로 좌우 배치 */
     align-items: flex-start;
-    /* 상단 정렬 */
     gap: 20px;
-    /* 이미지와 텍스트 간격 */
     margin: 20px;
-    /* 페이지 여백 */
 }
 
 .poster {
     width: 200px;
-    /* 이미지 너비 조정 */
     height: auto;
-    /* 비율 유지 */
     border-radius: 10px;
-    /* 이미지 모서리를 둥글게 */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* 이미지에 그림자 추가 */
 }
 
 .info {
     flex: 1;
-    /* 텍스트 정보가 남은 공간을 차지하도록 설정 */
 }
 
 .info h1 {
     font-size: 24px;
-    /* 제목 크기 */
     margin-bottom: 10px;
-    /* 제목과 텍스트 간격 */
 }
 
 .info p {
     font-size: 16px;
-    /* 텍스트 크기 */
     line-height: 1.5;
-    /* 줄 간격 */
     color: #333;
-    /* 텍스트 색상 */
     margin-bottom: 8px;
-    /* 문단 간격 */
 }

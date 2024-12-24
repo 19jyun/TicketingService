@@ -5,22 +5,23 @@ export const getBanners = async (req: Request, res: Response) => {
   try {
     const { username } = req.query;
 
-    if (!username) {
-      return res
-        .status(400)
-        .json({ success: false, error: "Username is required." });
-    }
-
-    // 유저 데이터 가져오기
-    const user = BannerModel.getUserByUsername(username as string);
-    if (!user || !user.interest) {
-      return res.status(404).json({ success: false, error: "User not found." });
-    }
-
-    // 관심도 비율에 따라 포스터 선택
+    let interest = {
+      Concerts: 0.25,
+      Musical: 0.25,
+      "Children/Family": 0.25,
+      Exhibition: 0.25,
+    };
     const totalPosters = 8;
+
+    if (username) {
+      const user = BannerModel.getUserByUsername(username as string);
+      if (user && user.interest) {
+        interest = user.interest;
+      }
+    }
+
     const selectedPosters = BannerModel.selectPostersByInterest(
-      user.interest,
+      interest,
       totalPosters
     );
 

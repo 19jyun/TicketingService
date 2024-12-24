@@ -88,30 +88,21 @@
     "price": 40
   },
   {
-    "reservation_id": "cspn-im60-zqmp-mgc1",
-    "user_id": "testuser",
-    "show_id": 3,
-    "date": "2024-12-23T14:50:02.160Z",
-    "seat_type": "regular",
-    "seat_count": 2,
-    "price": 60
-  },
-  {
-    "reservation_id": "bdvo-0prf-ungz-lhzd",
+    "reservation_id": "nfu0-f660-wplq-3izz",
     "user_id": "testuser",
     "show_id": 1,
-    "date": "2024-12-23T15:51:05.831Z",
-    "seat_type": "regular",
-    "seat_count": 1,
-    "price": 50
+    "date": "2024-12-24T06:51:50.410Z",
+    "seat_type": "vip",
+    "seat_count": 2,
+    "price": 200
   },
   {
-    "reservation_id": "ksuc-2v4r-kap9-no83",
+    "reservation_id": "wjms-6q8s-s6qf-o6hn",
     "user_id": "testuser",
-    "show_id": 7,
-    "date": "2024-12-23T16:48:48.303Z",
-    "seat_type": "regular",
-    "seat_count": 1,
-    "price": 30
+    "show_id": 1,
+    "date": "2024-12-24T06:59:32.846Z",
+    "seat_type": "vip",
+    "seat_count": 2,
+    "price": 200
   }
 ]

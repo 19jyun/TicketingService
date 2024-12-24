@@ -1,26 +1,26 @@
 .carouselContainer {
   position: relative;
-  width: 80%; /* 화면 너비의 80% */
-  max-height: 500px; /* 배너의 최대 높이 */
-  margin: 0 auto; /* 가운데 정렬 */
+  width: 80%;
+  max-height: 500px;
+  margin: 0 auto;
   overflow: hidden;
   background-color: #000;
-  border-radius: 15px; /* 라운딩 처리 */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* 약간의 그림자 효과 */
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .imageContainer {
   display: flex;
-  transition: transform 0.5s ease-in-out; /* 슬라이딩 애니메이션 추가 */
-  will-change: transform; /* 최적화 */
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
 }
 
 .carouselImage {
   width: 100%;
-  flex-shrink: 0; /* 모든 이미지를 같은 크기로 유지 */
+  flex-shrink: 0;
   height: auto;
-  object-fit: cover; /* 이미지 비율 유지 */
-  cursor: pointer; /* 이미지 클릭 가능 */
+  object-fit: cover;
+  cursor: pointer;
 }
 
 .miniaturesContainer {

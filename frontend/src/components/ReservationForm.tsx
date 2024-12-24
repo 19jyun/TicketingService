@@ -29,7 +29,6 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ showData }) => {
       return;
     }
 
-    // 예약할 좌석 정보 준비
     const seat_types: string[] = [];
     const seat_counts: number[] = [];
 
@@ -42,7 +41,6 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ showData }) => {
       seat_counts.push(vipCount);
     }
 
-    // 좌석이 하나도 선택되지 않은 경우 처리
     if (seat_types.length === 0) {
       alert("Please select at least one seat.");
       return;
@@ -56,7 +54,6 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ showData }) => {
         seat_counts
       );
 
-      // 성공적으로 예약한 경우 ReservationResult로 이동
       navigate("/reservation-result", {
         state: {
           user_id: username,
@@ -73,9 +70,13 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ showData }) => {
     }
   };
 
-  return (
-    <div className={styles.reservationContainer}>
-      <h2 className={styles.title}>Reserve</h2>
+return (
+  <div className={styles.reservationContainer}>
+    <div className={styles.titleContainer}>
+      <h2 className={styles.title}>Reserve Tickets</h2>
+    </div>
+
+    <div className={styles.contentContainer}>
       <div className={styles.seatSelection}>
         <div className={styles.seatType}>
           <h3>Regular Seats ({showData.price.regular})</h3>
@@ -129,7 +130,8 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ showData }) => {
         Reserve
       </button>
     </div>
-  );
+  </div>
+);
 };
 
 export default ReservationForm;

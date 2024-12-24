@@ -1,14 +1,11 @@
-/* 메인 컨테이너 */
 .mainContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     background-color: #f9f9f9;
-    /* 전체 배경색 */
 }
 
-/* 메인 컨텐츠 섹션 */
 .contentSection {
     margin-top: 20px;
     padding: 20px;

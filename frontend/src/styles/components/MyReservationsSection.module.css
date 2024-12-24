@@ -29,14 +29,12 @@
 
 .card.expanded .expandableContent {
     max-height: 500px;
-    /* 스크롤 가능한 최대 높이 설정 */
     opacity: 1;
     padding: 20px;
 }
 
 .scrollableList {
     max-height: 400px;
-    /* 스크롤 가능 영역 높이 */
     overflow-y: auto;
     border: 1px solid #ddd;
     border-radius: 5px;

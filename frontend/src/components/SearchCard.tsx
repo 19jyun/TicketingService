@@ -7,7 +7,7 @@ interface SearchCardProps {
   title: string;
   genre: string;
   release_date: string;
-  ranking: number;  // 랭킹 추가
+  ranking: number;
 }
 
 const SearchCard: React.FC<SearchCardProps> = ({
@@ -20,7 +20,7 @@ const SearchCard: React.FC<SearchCardProps> = ({
   const navigate = useNavigate();
 
   const handleCardClick = () => {
-    navigate(`/show/${show_id}`); // 클릭 시 show_id로 이동
+    navigate(`/show/${show_id}`);
   };
 
   return (

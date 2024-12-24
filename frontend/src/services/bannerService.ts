@@ -3,7 +3,7 @@ import axios from "axios";
 const API_BASE_URL = "http://localhost:5000/api/banners";
 
 export const fetchBanners = async (
-  username: string
+  username: string = ""
 ): Promise<{ banners: string[] }> => {
   try {
     const response = await axios.get<{ banners: string[] }>(

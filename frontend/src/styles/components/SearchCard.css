@@ -1,11 +1,9 @@
 .search-card {
     display: flex;
     flex-direction: row;
-    /* 이미지와 텍스트를 가로로 배치 */
     justify-content: flex-start;
     align-items: center;
     width: 50%;
-    /* 카드 너비를 50%로 */
     margin: 10px auto;
     padding: 15px;
     border: 1px solid #ccc;
@@ -14,15 +12,12 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     gap: 15px;
-    /* 텍스트와 이미지 간의 간격 추가 */
 }
 
 .search-card img {
     width: 100px;
-    /* 이미지 크기 조정 */
     height: auto;
     object-fit: cover;
-    /* 이미지가 비율에 맞게 잘리도록 */
 }
 
 .search-card-title,
@@ -31,7 +26,6 @@
 .search-card-ranking {
     margin: 0;
     padding: 5px 0;
-    /* 텍스트들 간의 padding 추가 */
 }
 
 .search-card-title {
@@ -53,7 +47,6 @@
     font-size: 14px;
     font-weight: bold;
     padding-top: 5px;
-    /* 랭킹 텍스트 상단에 padding 추가 */
 }
 
 .search-card:hover {

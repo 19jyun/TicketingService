@@ -1,4 +1,3 @@
-/* 예약 카드 기본 스타일 */
 .reservationCard {
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -8,27 +7,21 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     list-style: none;
     overflow: hidden;
-    transition: transform 0.3s ease, opacity 0.3s ease, margin 0.3s ease;
+    max-height: 120px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, max-height 0.4s ease, padding 0.4s ease;
 }
 
 .reservationCard.expanded {
     background-color: #fdfdfd;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.modifySection {
-    max-height: 0;
-    /* 기본 높이 0 */
-    opacity: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease, opacity 0.3s ease;
-    /* 높이와 투명도 트랜지션 */
+    max-height: 350px;
 }
 
 .reservationCard.expanded .modifySection {
     max-height: 500px;
-    /* 최대 높이 */
     opacity: 1;
+    padding: 20px;
+    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
 }
 
 .reservationCard.deleting {
@@ -36,18 +29,14 @@
     transform: translateX(-100%);
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
-
 .buttonContainer {
     display: flex;
     gap: 10px;
-    /* 버튼 간격 */
     margin-top: 10px;
 }
 
-.modifyButton,
-.deleteButton {
+.modifyButton{
     background-color: #f1f1f1;
-    /* Gray scale */
     color: #333;
     border: 1px solid #ccc;
     padding: 5px 10px;
@@ -56,10 +45,24 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.modifyButton:hover,
-.deleteButton:hover {
+.deleteButton {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.modifyButton:hover {
     background-color: #e0e0e0;
     color: #000;
+}
+
+.deleteButton:hover {
+    background-color: #bb0000;
+    color: #ffffff;
 }
 
 .modifySection {
@@ -68,14 +71,15 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
+    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
     max-height: 500px;
-    /* 확장 시 최대 높이 설정 */
+    opacity: 1;
 }
 
 .modifySection.hidden {
     max-height: 0;
     opacity: 0;
+    padding: 0 10px;
     overflow: hidden;
 }
 
@@ -85,13 +89,15 @@
 }
 
 .modifySection button {
-    background-color: #d9d9d9;
-    color: #333;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 8px;
+    padding: 10px;
+        border: none;
+        background-color: transparent;
+        border-radius: 25px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #000000;
+        cursor: pointer;
+        transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
 .modifySection button:hover {

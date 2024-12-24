@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import styles from '../styles/components/Header.module.css';
@@ -17,14 +17,16 @@ export const Header: React.FC = () => {
     }
   };
 
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      handleSearch();
+    }
+  };
+
   const handleLogout = () => {
     logout();
     setPopupMessage('Logged out successfully.');
-
-    setTimeout(() => {
-      setPopupMessage(null);
-      navigate('/');
-    }, 2000);
+    navigate('/');
   };
 
   const handleProfileClick = () => {
@@ -45,6 +47,7 @@ export const Header: React.FC = () => {
           type="text"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
+          onKeyDown={handleKeyDown}
           placeholder="Search for a show..."
           className={styles.searchInput}
         />
@@ -56,7 +59,9 @@ export const Header: React.FC = () => {
       <nav className={styles.nav}>
         {username ? (
           <div>
-            <span className={styles.link} onClick={handleProfileClick} style={{ cursor: 'pointer'}}> {username}</span>
+            <span className={styles.link} onClick={handleProfileClick} style={{ cursor: 'pointer' }}>
+              {username}
+            </span>
             <a onClick={handleLogout} className={styles.link} style={{ cursor: 'pointer' }}>
               Logout
             </a>

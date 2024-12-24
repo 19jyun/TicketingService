@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styles from "../styles/components/MyReservationsSection.module.css";
 import ReservationCard from "./ReservationCard";
 import {
@@ -27,17 +27,23 @@ const MyReservationsSection: React.FC<MyReservationsSectionProps> = ({
   const [reservations, setReservations] = useState<Reservation[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [isExpanded, setIsExpanded] = useState(false);
+  const sectionRef = useRef<HTMLDivElement>(null);
 
-  const toggleExpand = () => setIsExpanded(!isExpanded);
+  const toggleExpand = (event: React.MouseEvent<HTMLDivElement>) => {
+    if (sectionRef.current && sectionRef.current.contains(event.target as Node)) {
+      return; // Prevent toggling when clicking inside the section
+    }
+    setIsExpanded(!isExpanded);
+  };
 
   useEffect(() => {
     const fetchReservations = async () => {
       try {
         const response = await getReservations(username);
-        setReservations(response.reservations);
+        setReservations(response.reservations || []);
       } catch (err: any) {
-        setError("Failed to load reservations. Please try again later.");
         console.error(err);
+        setError("Failed to load reservations. Please try again later.");
       }
     };
 
@@ -81,27 +87,32 @@ const MyReservationsSection: React.FC<MyReservationsSectionProps> = ({
     }
   };
 
-  if (error) {
-    return <p className={styles.error}>{error}</p>;
-  }
-
   return (
     <div
       className={`${styles.card} ${isExpanded ? styles.expanded : ""}`}
       onClick={toggleExpand}
     >
       <h2>My Reservations</h2>
-      <div className={styles.expandableContent}>
-        <div className={styles.scrollableList}>
-          {reservations.map((reservation) => (
-            <ReservationCard
-              key={reservation.reservation_id}
-              reservation={reservation}
-              onModify={handleModifyReservation}
-              onDelete={handleDeleteReservation}
-            />
-          ))}
-        </div>
+      <div
+        className={styles.expandableContent}
+        ref={sectionRef} // Ref to detect clicks inside
+      >
+        {error ? (
+          <p className={styles.error}>{error}</p>
+        ) : reservations.length === 0 ? (
+          <p className={styles.emptyMessage}>Reservation history is empty.</p>
+        ) : (
+          <div className={styles.scrollableList}>
+            {reservations.map((reservation) => (
+              <ReservationCard
+                key={reservation.reservation_id}
+                reservation={reservation}
+                onModify={handleModifyReservation}
+                onDelete={handleDeleteReservation}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

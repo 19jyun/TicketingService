@@ -26,7 +26,6 @@ const App: React.FC = () => {
           <Route path="/show/:show_id" element={<ShowDetails />} />
           <Route path="/reservation-result" element={<ReservationResult />} />
         </Routes>
-        {/* Chatbot Component */}
         <DynamicChatbot />
       </Router>
       <Footer />
@@ -44,7 +43,7 @@ const DynamicChatbot: React.FC = () => {
 
   if (location.pathname.startsWith('/show')) {
     currentPage = 'showDetails';
-    showTitle = params.show_id || null; // Assign null if no show_id exists
+    showTitle = params.show_id || null;
   } else if (location.pathname.startsWith('/profile')) {
     currentPage = 'profile';
   } else if (location.pathname.startsWith('/search')) {
@@ -57,7 +56,7 @@ const DynamicChatbot: React.FC = () => {
 
   return (
     <Chatbot
-      loggedIn={username} // Pass login status dynamically
+      loggedIn={username}
       currentPage={currentPage}
       showTitle={showTitle}
     />

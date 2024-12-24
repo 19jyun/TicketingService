@@ -3,7 +3,6 @@ import nlp from "compromise";
 import fs from "fs";
 import path from "path";
 
-// Load chatbot responses and dummy data
 const chatbotResponsesPath = path.resolve(
   __dirname,
   "../../data/chatbot_responses.json"
@@ -30,12 +29,10 @@ const dummyReservations = [
 export const handleChatbot = (req: Request, res: Response) => {
   const { userInput, currentPage, loggedIn, showTitle } = req.body;
 
-  // If the user is not logged in
   if (!loggedIn) {
     return res.json({ response: chatbotResponses.general.not_logged_in });
   }
 
-  // Determine userID from loggedIn
   const userID = loggedIn;
 
   const doc = nlp(userInput.toLowerCase());
@@ -101,7 +98,6 @@ export const handleChatbot = (req: Request, res: Response) => {
   return res.json({ response: chatbotResponses.general.fallback });
 };
 
-// Helper functions
 const recommendShows = (genre: string | null) => {
   const shows = chatbotResponses.show_recommendations.based_on_genre.find(
     (item: { genre: string; shows: string[] }) =>

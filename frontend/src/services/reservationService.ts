@@ -1,10 +1,8 @@
 import axios from "axios";
 
-// Base URL for API
 const API_BASE_URL = "http://localhost:5000/api/reservations";
 
 /**
- * Add a new reservation
  * @param userId User ID
  * @param showId Show ID
  * @param seatType Seat type ('regular' or 'vip')
@@ -22,11 +20,10 @@ export const addReservation = async (
       params: {
         user_id,
         show_id,
-        seat_type: seat_types, // 배열 전달
-        seat_count: seat_counts, // 배열 전달
+        seat_type: seat_types,
+        seat_count: seat_counts,
       },
       paramsSerializer: (params) => {
-        // 배열 직렬화를 올바르게 처리
         return Object.keys(params)
           .map((key) =>
             Array.isArray(params[key])
@@ -46,7 +43,6 @@ export const addReservation = async (
 };
 
 /**
- * Modify an existing reservation
  * @param reservationId Reservation ID
  * @param seatType New seat type ('regular' or 'vip')
  * @param seatCount New seat count
@@ -61,8 +57,8 @@ export const modifyReservation = async (
     const response = await axios.get(`${API_BASE_URL}/modify`, {
       params: {
         reservation_id: reservationId,
-        seat_type: seatType,
-        seat_count: seatCount,
+        new_seat_type: seatType,
+        new_seat_count: seatCount,
       },
     });
     return response.data;
@@ -73,7 +69,6 @@ export const modifyReservation = async (
 };
 
 /**
- * Delete a reservation
  * @param reservationId Reservation ID
  * @returns Response data
  */
@@ -92,7 +87,6 @@ export const deleteReservation = async (reservationId: string) => {
 };
 
 /**
- * Get reservations for a specific user
  * @param userId User ID
  * @returns List of reservations
  */

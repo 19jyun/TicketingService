@@ -59,13 +59,17 @@ const ChangePasswordSection: React.FC<ChangePasswordSectionProps> = ({
       onClick={toggleExpand}
     >
       <h2>Change Password</h2>
-      <div className={styles.expandableContent}>
+      <div
+        className={styles.expandableContent}
+        onClick={(e) => e.stopPropagation()}
+      >
         {passwordError && <p className={styles.error}>{passwordError}</p>}
         <input
           type="password"
           placeholder="Current Password"
           className={styles.input}
           value={passwordFields.currentPassword}
+          onClick={(e) => e.stopPropagation()}
           onChange={(e) =>
             setPasswordFields({ ...passwordFields, currentPassword: e.target.value })
           }
@@ -75,6 +79,7 @@ const ChangePasswordSection: React.FC<ChangePasswordSectionProps> = ({
           placeholder="New Password"
           className={styles.input}
           value={passwordFields.newPassword}
+          onClick={(e) => e.stopPropagation()}
           onChange={(e) =>
             setPasswordFields({ ...passwordFields, newPassword: e.target.value })
           }
@@ -84,11 +89,18 @@ const ChangePasswordSection: React.FC<ChangePasswordSectionProps> = ({
           placeholder="Confirm New Password"
           className={styles.input}
           value={passwordFields.confirmPassword}
+          onClick={(e) => e.stopPropagation()}
           onChange={(e) =>
             setPasswordFields({ ...passwordFields, confirmPassword: e.target.value })
           }
         />
-        <button className={styles.button} onClick={handlePasswordChange}>
+        <button
+          className={styles.button}
+          onClick={(e) => {
+            e.stopPropagation();
+            handlePasswordChange();
+          }}
+        >
           Update Password
         </button>
       </div>
