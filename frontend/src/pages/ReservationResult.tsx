@@ -3,25 +3,24 @@ import { useLocation, useNavigate } from "react-router-dom";
 import styles from "../styles/pages/ReservationResult.module.css";
 import ReservationCard from "../components/ReservationCard";
 import { updateInterest } from "../services/userInterestService";
-import { useAuth } from "../contexts/AuthContext"; // AuthContext 사용
+import { useAuth } from "../contexts/AuthContext"; 
 
 const ReservationResult: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const { username } = useAuth(); // 로그인된 사용자 정보 가져오기
+  const { username } = useAuth(); 
 
   const {
     show_title = "Unknown Show",
     show_date = "Unknown Date",
     reservedSeats = [],
     totalPrice = 0,
-    genre = "Unknown Genre", // 예약 시 전달된 장르 정보
+    genre = "Unknown Genre", 
   } = location.state || {};
 
   useEffect(() => {
     const updateUserInterest = async () => {
       if (username && genre !== "Unknown Genre") {
-        // 예약 완료 후 관심도 업데이트
         await updateInterest(username, genre, "reservation");
       }
     };

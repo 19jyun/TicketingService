@@ -1,4 +1,3 @@
-/* 기본 스타일 */
 .app-container {
     position: relative;
     width: 100%;
@@ -6,12 +5,10 @@
     overflow: hidden;
 }
 
-/* 슬라이드 인 애니메이션 */
 .slide-in {
     animation: slideIn 300ms ease-in-out forwards;
 }
 
-/* 슬라이드 아웃 애니메이션 */
 .slide-out {
     animation: slideOut 300ms ease-in-out forwards;
 }

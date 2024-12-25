@@ -15,14 +15,13 @@ const SignupForm: React.FC<SignupFormProps> = ({
   errorMessage,
 }) => {
   const [username, setUsername] = useState("");
-  const [idAvailable, setIdAvailable] = useState(false); // 아이디 사용 가능 여부
+  const [idAvailable, setIdAvailable] = useState(false); 
   const [email, setEmail] = useState("");
-  const [emailAvailable, setEmailAvailable] = useState(false); // 이메일 사용 가능 여부
+  const [emailAvailable, setEmailAvailable] = useState(false); 
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [validationError, setValidationError] = useState("");
 
-  // 아이디 중복 확인
   const handleIdCheck = async () => {
     const isAvailable = await onCheckId(username);
     if (isAvailable) {
@@ -34,7 +33,6 @@ const SignupForm: React.FC<SignupFormProps> = ({
     }
   };
 
-  // 이메일 중복 확인
   const handleEmailCheck = async () => {
     const isAvailable = await onCheckEmail(email);
     if (isAvailable) {
@@ -46,7 +44,6 @@ const SignupForm: React.FC<SignupFormProps> = ({
     }
   };
 
-  // 회원가입 제출
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (password !== confirmPassword) {
@@ -67,14 +64,13 @@ const SignupForm: React.FC<SignupFormProps> = ({
       {errorMessage && <p className={styles.error}>{errorMessage}</p>}
       {validationError && <p className={styles.error}>{validationError}</p>}
       <form onSubmit={handleSubmit} className={styles.form}>
-        {/* 아이디 입력 및 중복 확인 */}
         <div className={styles.inputGroup}>
           <input
             type="text"
             value={username}
             onChange={(e) => {
               setUsername(e.target.value);
-              setIdAvailable(false); // 아이디 변경 시 초기화
+              setIdAvailable(false);
             }}
             placeholder="Enter your username"
             className={styles.input}
@@ -84,20 +80,19 @@ const SignupForm: React.FC<SignupFormProps> = ({
             type="button"
             onClick={handleIdCheck}
             className={styles.checkButton}
-            disabled={idAvailable} // 이미 사용 가능 확인된 경우 비활성화
+            disabled={idAvailable} 
           >
             Check ID
           </button>
         </div>
 
-        {/* 이메일 입력 및 중복 확인 */}
         <div className={styles.inputGroup}>
           <input
             type="email"
             value={email}
             onChange={(e) => {
               setEmail(e.target.value);
-              setEmailAvailable(false); // 이메일 변경 시 초기화
+              setEmailAvailable(false); 
             }}
             placeholder="Enter your email"
             className={styles.input}
@@ -107,13 +102,12 @@ const SignupForm: React.FC<SignupFormProps> = ({
             type="button"
             onClick={handleEmailCheck}
             className={styles.checkButton}
-            disabled={emailAvailable} // 이미 사용 가능 확인된 경우 비활성화
+            disabled={emailAvailable} 
           >
             Check Email
           </button>
         </div>
 
-        {/* 비밀번호 입력 */}
         <input
           type="password"
           value={password}
@@ -143,7 +137,6 @@ const SignupForm: React.FC<SignupFormProps> = ({
             : ""}
         </p>
 
-        {/* 회원가입 버튼 */}
         <button
           type="submit"
           className={styles.submitButton}

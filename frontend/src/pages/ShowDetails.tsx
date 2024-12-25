@@ -4,13 +4,13 @@ import { getShowById } from "../services/showService";
 import ShowDetailForm from "../components/ShowDetailForm";
 import ReservationForm from "../components/ReservationForm";
 import { updateInterest } from "../services/userInterestService";
-import { useAuth } from "../contexts/AuthContext"; // AuthContext 사용
+import { useAuth } from "../contexts/AuthContext";
 import styles from "../styles/pages/ShowDetails.module.css";
 import { Show } from "../types/Show";
 
 const ShowDetails: React.FC = () => {
   const { show_id } = useParams<{ show_id: string }>();
-  const { username } = useAuth(); // 로그인된 사용자 정보 가져오기
+  const { username } = useAuth(); 
   const [showData, setShowData] = useState<Show | null>(null);
   const [error, setError] = useState<string | null>(null);
 
@@ -22,7 +22,6 @@ const ShowDetails: React.FC = () => {
           if (show) {
             setShowData(show);
 
-            // 관심도 업데이트
             if (username) {
               await updateInterest(username, show.genre, "search");
             }

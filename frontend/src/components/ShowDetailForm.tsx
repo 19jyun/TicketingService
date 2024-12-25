@@ -8,19 +8,17 @@ interface ShowDetailFormProps {
 
 const ShowDetailForm: React.FC<ShowDetailFormProps> = ({ showData }) => {
   if (!showData) {
-    return <div>No show data available.</div>; // 데이터가 없는 경우 처리
+    return <div>No show data available.</div>; 
   }
 
   return (
     <div className={styles.detailContainer}>
-      {/* 포스터 이미지 */}
       <img
-        src={`http://localhost:5000${showData.poster_url}`} // API 기반 포스터 경로
+        src={`http://localhost:5000${showData.poster_url}`} 
         alt={showData.title}
         className={styles.poster}
       />
 
-      {/* 텍스트 정보 */}
       <div className={styles.info}>
         <h1>{showData.title}</h1>
         <p>{showData.description}</p>

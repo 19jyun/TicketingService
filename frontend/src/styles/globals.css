@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -11,7 +10,6 @@ body {
     padding: 20px;
 }
 
-/* Header */
 .header {
     background-color: #333;
     color: #fff;
@@ -36,7 +34,6 @@ body {
     text-decoration: none;
 }
 
-/* Forms */
 .form-container {
     max-width: 400px;
     margin: 0 auto;
@@ -46,13 +43,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* Full viewport height */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     border-radius: 8px;
 }
 
-/* Title */
 .form-title {
     font-size: 1.5rem;
     margin-bottom: 20px;
@@ -60,7 +55,6 @@ body {
     text-align: center;
 }
 
-/* Error message styling */
 .form-error {
     color: red;
     font-size: 0.9rem;
@@ -68,11 +62,9 @@ body {
     text-align: center;
 }
 
-/* Input and button dimensions */
 .form-input,
 .form-button {
     width: 100%;
-    /* Full width of the form container */
     padding: 12px;
     font-size: 16px;
     border-radius: 5px;
@@ -86,7 +78,6 @@ body {
     outline: none;
 }
 
-/* Button styling */
 .form-button {
     background-color: #007bff;
     color: white;
@@ -114,13 +105,11 @@ body {
     font-size: 12px;
 }
 
-/* Main Page Styles */
 .main-page {
     font-family: Arial, sans-serif;
     padding: 20px;
 }
 
-/* Banner Carousel */
 .banner-carousel {
     display: flex;
     gap: 20px;
@@ -133,7 +122,6 @@ body {
     border-radius: 8px;
 }
 
-/* Genre-Based Rankings */
 .genre-rankings {
     margin-bottom: 40px;
 }
@@ -177,7 +165,6 @@ body {
     color: #555;
 }
 
-/* Footer */
 .main-footer {
     text-align: center;
     margin-top: 40px;
@@ -201,7 +188,5 @@ body {
 
 .search-card:hover {
     transform: scale(1.05);
-    /* 살짝 확대 */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    /* 그림자 추가 */
 }

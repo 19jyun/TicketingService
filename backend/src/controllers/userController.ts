@@ -1,7 +1,6 @@
 import { Request, Response } from "express";
 import { getUsers, saveUsers } from "../models/userModel";
 
-// ID 중복 확인
 export const checkId = async (req: Request, res: Response) => {
   const { username } = req.query;
 
@@ -26,7 +25,6 @@ export const checkId = async (req: Request, res: Response) => {
   }
 };
 
-// 이메일 중복 확인
 export const checkEmail = async (req: Request, res: Response) => {
   const { email } = req.query;
 
@@ -51,7 +49,6 @@ export const checkEmail = async (req: Request, res: Response) => {
   }
 };
 
-// 로그인
 export const loginUser = async (req: Request, res: Response) => {
   const { email, password } = req.query;
 
@@ -111,7 +108,6 @@ export const signupUser = async (req: Request, res: Response) => {
   try {
     const users = await getUsers();
 
-    // ID 중복 확인
     const isUsernameTaken = users.some((user) => user.username === username);
     if (isUsernameTaken) {
       return res
@@ -119,7 +115,6 @@ export const signupUser = async (req: Request, res: Response) => {
         .json({ success: false, error: "Username is already taken" });
     }
 
-    // 이메일 중복 확인
     const isEmailTaken = users.some((user) => user.email === email);
     if (isEmailTaken) {
       return res
@@ -127,7 +122,6 @@ export const signupUser = async (req: Request, res: Response) => {
         .json({ success: false, error: "Email is already taken" });
     }
 
-    // 관심도 초기화 값
     const initialInterest = {
       Concerts: 0.25,
       Musical: 0.25,
@@ -135,11 +129,9 @@ export const signupUser = async (req: Request, res: Response) => {
       Exhibition: 0.25,
     };
 
-    // 새 사용자 추가
     const newUser = { username, email, password, interest: initialInterest };
     users.push(newUser);
 
-    // 파일에 저장
     await saveUsers(users);
 
     res
@@ -151,7 +143,6 @@ export const signupUser = async (req: Request, res: Response) => {
   }
 };
 
-// 비밀번호 변경
 export const changePassword = async (req: Request, res: Response) => {
   const { username, newPassword } = req.query;
 
@@ -175,16 +166,13 @@ export const changePassword = async (req: Request, res: Response) => {
   try {
     const users = await getUsers();
 
-    // 사용자 찾기
     const userIndex = users.findIndex((user) => user.username === username);
     if (userIndex === -1) {
       return res.status(404).json({ success: false, error: "User not found" });
     }
 
-    // 비밀번호 변경
     users[userIndex].password = newPassword;
 
-    // 파일에 저장
     await saveUsers(users);
 
     res
@@ -199,7 +187,6 @@ export const changePassword = async (req: Request, res: Response) => {
 export const verifyPassword = async (req: Request, res: Response) => {
   const { username, currentPassword } = req.query;
 
-  // 요청 데이터 검증
   if (!username || typeof username !== "string") {
     return res.status(400).json({
       success: false,
@@ -216,13 +203,11 @@ export const verifyPassword = async (req: Request, res: Response) => {
   try {
     const users = await getUsers();
 
-    // 사용자 검색
     const user = users.find((user) => user.username === username);
     if (!user) {
       return res.status(404).json({ success: false, error: "User not found" });
     }
 
-    // 비밀번호 확인
     if (user.password === currentPassword) {
       return res.status(200).json({ success: true });
     } else {
@@ -249,7 +234,6 @@ export const updateUserInterest = async (req: Request, res: Response) => {
   try {
     const users = await getUsers();
 
-    // 유저 검색
     const user = users.find((u) => u.username === username);
     if (!user || !user.interest) {
       return res.status(404).json({
@@ -258,12 +242,10 @@ export const updateUserInterest = async (req: Request, res: Response) => {
       });
     }
 
-    // 관심도 업데이트
     const increment = action === "reservation" ? 20 : 1;
     user.interest[genre as string] =
       (user.interest[genre as string] || 0) + increment;
 
-    // 관심도 정규화
     const total = Object.values(user.interest).reduce(
       (sum, value) => sum + value,
       0
@@ -272,7 +254,6 @@ export const updateUserInterest = async (req: Request, res: Response) => {
       user.interest[key] /= total;
     }
 
-    // 저장
     await saveUsers(users);
 
     res.status(200).json({

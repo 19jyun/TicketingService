@@ -13,23 +13,23 @@ export interface Show {
  * @returns {Promise<Show[]>} A promise that resolves to a list of shows
  */
 export const fetchShowData = async (): Promise<Show[]> => {
-  console.log("fetchShowData called"); // 호출 여부 확인
+  console.log("fetchShowData called");
 
   try {
     const response = await fetch("/data/shows.csv");
-    console.log("Fetch response status:", response.status); // 응답 상태 확인
+    console.log("Fetch response status:", response.status);
 
     if (!response.ok) {
       throw new Error("Failed to fetch show data.");
     }
 
     const csvText = await response.text();
-    console.log("Raw CSV Data:", csvText); // 원본 CSV 데이터 출력
+    console.log("Raw CSV Data:", csvText);
 
     const parsedData: Show[] = csvText
       .split("\n")
-      .slice(1) // 헤더 제거
-      .filter((row) => row.trim().length > 0) // 빈 줄 제거
+      .slice(1)
+      .filter((row) => row.trim().length > 0)
       .map((row) => {
         const [
           show_id,
@@ -52,10 +52,10 @@ export const fetchShowData = async (): Promise<Show[]> => {
         };
       });
 
-    console.log("Parsed Data:", parsedData); // 파싱된 데이터 출력
+    console.log("Parsed Data:", parsedData);
     return parsedData;
   } catch (err) {
-    console.error("Error in fetchShowData:", err); // 에러 로그
+    console.error("Error in fetchShowData:", err);
     throw err;
   }
 };
@@ -67,12 +67,12 @@ export const fetchShowData = async (): Promise<Show[]> => {
 export const getShowById = async (
   showId: string
 ): Promise<Show | undefined> => {
-  console.log("getShowById called with showId:", showId); // 디버깅 로그
+  console.log("getShowById called with showId:", showId);
   const shows = await fetchShowData();
-  console.log("Fetched shows data in getShowById:", shows); // 전체 데이터 출력
+  console.log("Fetched shows data in getShowById:", shows);
 
   const foundShow = shows.find((show) => show.show_id === showId);
-  console.log("Found show:", foundShow); // 찾은 데이터 출력
+  console.log("Found show:", foundShow);
 
   return foundShow;
 };

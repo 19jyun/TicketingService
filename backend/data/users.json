@@ -5,10 +5,10 @@
     "password": "asdf",
     "email": "qwer@example.com",
     "interest": {
-      "Concerts": 0.9999999999999998,
-      "Musical": 3.469030900351911e-39,
-      "Children/Family": 3.032432323367749e-18,
-      "Exhibition": 3.038277976039302e-16
+      "Concerts": 1,
+      "Musical": 8.259597381790264e-41,
+      "Children/Family": 7.220076960399403e-20,
+      "Exhibition": 7.233995181045958e-18
     }
   },
   {
@@ -16,10 +16,10 @@
     "email": "newuser@example.com",
     "password": "newpassword123",
     "interest": {
-      "Concerts": 0.25,
-      "Musical": 0.25,
-      "Children/Family": 0.25,
-      "Exhibition": 0.25
+      "Concerts": 0.9964657738095238,
+      "Musical": 0.00018601190476190475,
+      "Children/Family": 0.00018601190476190475,
+      "Exhibition": 0.003162202380952381
     }
   },
   {
@@ -42,6 +42,17 @@
       "Musical": 0.25,
       "Children/Family": 0.25,
       "Exhibition": 0.25
+    }
+  },
+  {
+    "username": "qwer",
+    "email": "qwer@gmail.com",
+    "password": "asdf",
+    "interest": {
+      "Concerts": 0.24978741496598644,
+      "Musical": 0.00007086167800453515,
+      "Children/Family": 0.7500708616780045,
+      "Exhibition": 0.00007086167800453515
     }
   }
 ]

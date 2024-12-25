@@ -31,7 +31,7 @@ const MyReservationsSection: React.FC<MyReservationsSectionProps> = ({
 
   const toggleExpand = (event: React.MouseEvent<HTMLDivElement>) => {
     if (sectionRef.current && sectionRef.current.contains(event.target as Node)) {
-      return; // Prevent toggling when clicking inside the section
+      return; 
     }
     setIsExpanded(!isExpanded);
   };
@@ -66,7 +66,7 @@ const MyReservationsSection: React.FC<MyReservationsSectionProps> = ({
                 seat_type: new_seat_type,
                 seat_count: new_seat_count,
                 price:
-                  (res.price / res.seat_count) * new_seat_count, // Recalculate price
+                  (res.price / res.seat_count) * new_seat_count, 
               }
             : res
         )
@@ -95,7 +95,7 @@ const MyReservationsSection: React.FC<MyReservationsSectionProps> = ({
       <h2>My Reservations</h2>
       <div
         className={styles.expandableContent}
-        ref={sectionRef} // Ref to detect clicks inside
+        ref={sectionRef} 
       >
         {error ? (
           <p className={styles.error}>{error}</p>

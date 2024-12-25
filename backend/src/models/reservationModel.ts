@@ -1,22 +1,18 @@
 import fs from "fs";
 import path from "path";
 
-// JSON 파일 경로
 const reservationsFile = path.join(__dirname, "../../data/reservations.json");
 const showsFile = path.join(__dirname, "../../data/shows.json");
 
-// JSON 파일 읽기
 const readJsonFile = (filePath: string) => {
   const data = fs.readFileSync(filePath, "utf8");
   return JSON.parse(data);
 };
 
-// JSON 파일 쓰기
 const writeJsonFile = (filePath: string, data: any) => {
   fs.writeFileSync(filePath, JSON.stringify(data, null, 2), "utf8");
 };
 
-// Reservation 데이터 접근
 export const ReservationModel = {
   getAllReservations: () => {
     return readJsonFile(reservationsFile);
@@ -47,7 +43,6 @@ export const ReservationModel = {
   },
 };
 
-// Show 데이터 접근
 export const ShowModel = {
   getAllShows: () => {
     return readJsonFile(showsFile);

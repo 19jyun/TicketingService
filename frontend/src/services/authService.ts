@@ -8,31 +8,28 @@ import {
 
 const API_BASE_URL = "http://localhost:5000/api/users";
 
-// ID 중복 확인
 export const checkId = async (username: string): Promise<boolean> => {
   try {
     const response = await axios.get(`${API_BASE_URL}/check-id`, {
       params: { username },
     });
-    return response.data.success; // 사용 가능하면 true
+    return response.data.success;
   } catch (error: any) {
-    return false; // 사용 불가능하면 false
+    return false;
   }
 };
 
-// 이메일 중복 확인
 export const checkEmail = async (email: string): Promise<boolean> => {
   try {
     const response = await axios.get(`${API_BASE_URL}/check-email`, {
       params: { email },
     });
-    return response.data.success; // 사용 가능하면 true
+    return response.data.success;
   } catch (error: any) {
-    return false; // 사용 불가능하면 false
+    return false;
   }
 };
 
-// 로그인
 export const login = async (data: LoginRequest): Promise<LoginResponse> => {
   try {
     const response = await axios.get<LoginResponse>(`${API_BASE_URL}/login`, {
@@ -47,7 +44,6 @@ export const login = async (data: LoginRequest): Promise<LoginResponse> => {
   }
 };
 
-// 회원가입
 export const signup = async (data: SignupRequest): Promise<SignupResponse> => {
   try {
     const response = await axios.post<SignupResponse>(
@@ -66,7 +62,6 @@ export const signup = async (data: SignupRequest): Promise<SignupResponse> => {
   }
 };
 
-// 비밀번호 변경
 export const changePassword = async (
   username: string,
   newPassword: string

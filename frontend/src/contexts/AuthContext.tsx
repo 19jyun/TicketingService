@@ -13,12 +13,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const login = (username: string) => {
     setUsername(username);
-    localStorage.setItem('username', username); // 브라우저 세션 유지
+    localStorage.setItem('username', username); 
   };
 
   const logout = () => {
-    setUsername(null); // 전역 상태에서 사용자 제거
-    localStorage.removeItem('username'); // 세션 삭제
+    setUsername(null); 
+    localStorage.removeItem('username'); 
   };
 
   return (

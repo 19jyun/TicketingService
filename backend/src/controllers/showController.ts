@@ -1,10 +1,9 @@
 import { Request, Response } from "express";
 import { getAllShows, getShowById } from "../models/showModel";
 
-// 모든 쇼 데이터를 반환
 export const getShows = async (req: Request, res: Response) => {
   try {
-    const shows = await getAllShows(); // 모든 쇼 데이터를 가져옴
+    const shows = await getAllShows();
     res.status(200).json(shows);
   } catch (error) {
     console.error("Error fetching shows:", error);
@@ -12,7 +11,6 @@ export const getShows = async (req: Request, res: Response) => {
   }
 };
 
-// 특정 쇼 데이터를 반환
 export const getShow = async (req: Request, res: Response) => {
   try {
     const id = parseInt(req.params.id, 10);
@@ -34,21 +32,18 @@ export const getShow = async (req: Request, res: Response) => {
   }
 };
 
-// 검색된 쇼 데이터를 반환
 export const searchShows = async (req: Request, res: Response) => {
   try {
     const keyword = req.query.keyword
       ? String(req.query.keyword).toLowerCase()
-      : ""; // 쿼리에서 검색어 가져오기
+      : "";
 
-    const shows = await getAllShows(); // 모든 쇼 데이터 가져오기
+    const shows = await getAllShows();
 
-    // 검색어가 없는 경우 모든 쇼 반환
     if (!keyword) {
       return res.status(200).json({ success: true, shows });
     }
 
-    // 검색어로 필터링
     const filteredShows = shows.filter((show) => {
       const titleMatch = show.title.toLowerCase().includes(keyword);
       const genreMatch = show.genre.toLowerCase().includes(keyword);
@@ -65,11 +60,10 @@ export const searchShows = async (req: Request, res: Response) => {
 
 export const getAllGenresTopShows = async (req: Request, res: Response) => {
   try {
-    const allShows = await getAllShows(); // 모든 쇼 데이터 가져오기
-    const genres = ["Concerts", "Musical", "Children/Family", "Exhibition"]; // 장르 목록
+    const allShows = await getAllShows();
+    const genres = ["Concerts", "Musical", "Children/Family", "Exhibition"];
 
     const genreData = genres.map((genre) => {
-      // 각 장르별 데이터 필터링 후 상위 5개 선택
       const topShows = allShows
         .filter((show) => show.genre.toLowerCase() === genre.toLowerCase())
         .sort((a, b) => a.ranking - b.ranking)
@@ -77,7 +71,7 @@ export const getAllGenresTopShows = async (req: Request, res: Response) => {
       return { genre, topShows };
     });
 
-    res.status(200).json(genreData); // 각 장르별 데이터 반환
+    res.status(200).json(genreData);
   } catch (error) {
     console.error("Error fetching genre data:", error);
     res.status(500).json({ error: "Internal server error" });
